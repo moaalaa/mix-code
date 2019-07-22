@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 
 mix.sass('src/css/app.scss', 'dist/css/');
 
-// mix.js('src/js/app.js', 'dist/js/');
+mix.js('src/js/app.js', 'dist/js/');
 
 mix.sourceMaps(); // Enable sourcemaps
 
