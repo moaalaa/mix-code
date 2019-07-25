@@ -1,9 +1,48 @@
 @charset "utf-8";
 
-$turquoise: red;
+// Utils
+@import 'utils/_colors';
+@import "utils/_sizing";
 
+// animations
+@import "animations/_have_new_business";
+
+// Bulma
 @import "~bulma/bulma";
 
-@import 'variables/utils';
+@import "utils/_spacing";
 
+// Body Styles
+html, body {
+    height: 100%;
+}
 
+.navbar {
+    &.is-transparent {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
+// Logo
+.navbar {
+    .logo {
+        max-height: 15rem;
+        width: 12rem;
+    }
+}
+
+// Intro Section 
+.intro-section {
+    background-image: url("/dist/images/background-cover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.read-more-btn {
+    transition: background 2s ease-in-out;
+    &:hover {
+        background-color: $primary !important;
+        background-image: linear-gradient(90deg, #3A81DE, #3DB6DE) !important;
+    }
+}

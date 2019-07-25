@@ -1,5 +1,57 @@
 @charset "UTF-8";
 
+.has-background-primary {
+  background-color: #3A81DE !important;
+  background-image: linear-gradient(45deg, #3A81DE, #3DB6DE) !important;
+}
+
+.is-full-width {
+  width: 100% !important;
+}
+
+.is-full-height {
+  height: 100% !important;
+}
+
+#have-business-svg .state-1,
+#have-business-svg .state-2 {
+  -webkit-animation-name: sliding-up-down;
+          animation-name: sliding-up-down;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#have-business-svg .state-2 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes sliding-up-down {
+  from {
+    transform: translateY(0);
+  }
+
+  from {
+    transform: translateY(5rem);
+  }
+}
+
+@keyframes sliding-up-down {
+  from {
+    transform: translateY(0);
+  }
+
+  from {
+    transform: translateY(5rem);
+  }
+}
+
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 
 @-webkit-keyframes spinAround {
@@ -1080,16 +1132,16 @@ a.has-text-dark:focus {
 }
 
 .has-text-primary {
-  color: red !important;
+  color: #3A81DE !important;
 }
 
 a.has-text-primary:hover,
 a.has-text-primary:focus {
-  color: #cc0000 !important;
+  color: #2168c4 !important;
 }
 
 .has-background-primary {
-  background-color: red !important;
+  background-color: #3A81DE !important;
 }
 
 .has-text-link {
@@ -2310,14 +2362,14 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 }
 
 .button.is-primary {
-  background-color: red;
+  background-color: #3A81DE;
   border-color: transparent;
   color: #fff;
 }
 
 .button.is-primary:hover,
 .button.is-primary.is-hovered {
-  background-color: #f20000;
+  background-color: #2f7adc;
   border-color: transparent;
   color: #fff;
 }
@@ -2330,26 +2382,26 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 
 .button.is-primary:focus:not(:active),
 .button.is-primary.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(255, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(58, 129, 222, 0.25);
 }
 
 .button.is-primary:active,
 .button.is-primary.is-active {
-  background-color: #e60000;
+  background-color: #2573da;
   border-color: transparent;
   color: #fff;
 }
 
 .button.is-primary[disabled],
 fieldset[disabled] .button.is-primary {
-  background-color: red;
+  background-color: #3A81DE;
   border-color: transparent;
   box-shadow: none;
 }
 
 .button.is-primary.is-inverted {
   background-color: #fff;
-  color: red;
+  color: #3A81DE;
 }
 
 .button.is-primary.is-inverted:hover,
@@ -2362,7 +2414,7 @@ fieldset[disabled] .button.is-primary.is-inverted {
   background-color: #fff;
   border-color: transparent;
   box-shadow: none;
-  color: red;
+  color: #3A81DE;
 }
 
 .button.is-primary.is-loading::after {
@@ -2371,21 +2423,21 @@ fieldset[disabled] .button.is-primary.is-inverted {
 
 .button.is-primary.is-outlined {
   background-color: transparent;
-  border-color: red;
-  color: red;
+  border-color: #3A81DE;
+  color: #3A81DE;
 }
 
 .button.is-primary.is-outlined:hover,
 .button.is-primary.is-outlined.is-hovered,
 .button.is-primary.is-outlined:focus,
 .button.is-primary.is-outlined.is-focused {
-  background-color: red;
-  border-color: red;
+  background-color: #3A81DE;
+  border-color: #3A81DE;
   color: #fff;
 }
 
 .button.is-primary.is-outlined.is-loading::after {
-  border-color: transparent transparent red red !important;
+  border-color: transparent transparent #3A81DE #3A81DE !important;
 }
 
 .button.is-primary.is-outlined.is-loading:hover::after,
@@ -2398,9 +2450,9 @@ fieldset[disabled] .button.is-primary.is-inverted {
 .button.is-primary.is-outlined[disabled],
 fieldset[disabled] .button.is-primary.is-outlined {
   background-color: transparent;
-  border-color: red;
+  border-color: #3A81DE;
   box-shadow: none;
-  color: red;
+  color: #3A81DE;
 }
 
 .button.is-primary.is-inverted.is-outlined {
@@ -2414,14 +2466,14 @@ fieldset[disabled] .button.is-primary.is-outlined {
 .button.is-primary.is-inverted.is-outlined:focus,
 .button.is-primary.is-inverted.is-outlined.is-focused {
   background-color: #fff;
-  color: red;
+  color: #3A81DE;
 }
 
 .button.is-primary.is-inverted.is-outlined.is-loading:hover::after,
 .button.is-primary.is-inverted.is-outlined.is-loading.is-hovered::after,
 .button.is-primary.is-inverted.is-outlined.is-loading:focus::after,
 .button.is-primary.is-inverted.is-outlined.is-loading.is-focused::after {
-  border-color: transparent transparent red red !important;
+  border-color: transparent transparent #3A81DE #3A81DE !important;
 }
 
 .button.is-primary.is-inverted.is-outlined[disabled],
@@ -3675,7 +3727,7 @@ fieldset[disabled] .button {
 }
 
 .notification.is-primary {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
@@ -3798,19 +3850,19 @@ fieldset[disabled] .button {
 }
 
 .progress.is-primary::-webkit-progress-value {
-  background-color: red;
+  background-color: #3A81DE;
 }
 
 .progress.is-primary::-moz-progress-bar {
-  background-color: red;
+  background-color: #3A81DE;
 }
 
 .progress.is-primary::-ms-fill {
-  background-color: red;
+  background-color: #3A81DE;
 }
 
 .progress.is-primary:indeterminate {
-  background-image: linear-gradient(to right, red 30%, #dbdbdb 30%);
+  background-image: linear-gradient(to right, #3A81DE 30%, #dbdbdb 30%);
 }
 
 .progress.is-link::-webkit-progress-value {
@@ -3992,8 +4044,8 @@ fieldset[disabled] .button {
 
 .table td.is-primary,
 .table th.is-primary {
-  background-color: red;
-  border-color: red;
+  background-color: #3A81DE;
+  border-color: #3A81DE;
   color: #fff;
 }
 
@@ -4040,7 +4092,7 @@ fieldset[disabled] .button {
 
 .table td.is-selected,
 .table th.is-selected {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
@@ -4060,7 +4112,7 @@ fieldset[disabled] .button {
 }
 
 .table tr.is-selected {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
@@ -4254,7 +4306,7 @@ fieldset[disabled] .button {
 }
 
 .tag:not(body).is-primary {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
@@ -4699,7 +4751,7 @@ fieldset[disabled] .input:-ms-input-placeholder {
 
 .is-primary.textarea,
 .is-primary.input {
-  border-color: red;
+  border-color: #3A81DE;
 }
 
 .is-primary.textarea:focus,
@@ -4710,7 +4762,7 @@ fieldset[disabled] .input:-ms-input-placeholder {
 .is-primary.input:active,
 .is-primary.is-active.textarea,
 .is-primary.is-active.input {
-  box-shadow: 0 0 0 0.125em rgba(255, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(58, 129, 222, 0.25);
 }
 
 .is-link.textarea,
@@ -5023,23 +5075,23 @@ fieldset[disabled] .select select:hover {
 }
 
 .select.is-primary:not(:hover)::after {
-  border-color: red;
+  border-color: #3A81DE;
 }
 
 .select.is-primary select {
-  border-color: red;
+  border-color: #3A81DE;
 }
 
 .select.is-primary select:hover,
 .select.is-primary select.is-hovered {
-  border-color: #e60000;
+  border-color: #2573da;
 }
 
 .select.is-primary select:focus,
 .select.is-primary select.is-focused,
 .select.is-primary select:active,
 .select.is-primary select.is-active {
-  box-shadow: 0 0 0 0.125em rgba(255, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(58, 129, 222, 0.25);
 }
 
 .select.is-link:not(:hover)::after {
@@ -5303,14 +5355,14 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-primary .file-cta {
-  background-color: red;
+  background-color: #3A81DE;
   border-color: transparent;
   color: #fff;
 }
 
 .file.is-primary:hover .file-cta,
 .file.is-primary.is-hovered .file-cta {
-  background-color: #f20000;
+  background-color: #2f7adc;
   border-color: transparent;
   color: #fff;
 }
@@ -5318,13 +5370,13 @@ fieldset[disabled] .select select:hover {
 .file.is-primary:focus .file-cta,
 .file.is-primary.is-focused .file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(255, 0, 0, 0.25);
+  box-shadow: 0 0 0.5em rgba(58, 129, 222, 0.25);
   color: #fff;
 }
 
 .file.is-primary:active .file-cta,
 .file.is-primary.is-active .file-cta {
-  background-color: #e60000;
+  background-color: #2573da;
   border-color: transparent;
   color: #fff;
 }
@@ -5695,7 +5747,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .help.is-primary {
-  color: red;
+  color: #3A81DE;
 }
 
 .help.is-link {
@@ -6612,17 +6664,17 @@ a.list-item {
 }
 
 .message.is-primary {
-  background-color: #fff5f5;
+  background-color: #f6f9fe;
 }
 
 .message.is-primary .message-header {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
 .message.is-primary .message-body {
-  border-color: red;
-  color: #ad0606;
+  border-color: #3A81DE;
+  color: #225495;
 }
 
 .message.is-link {
@@ -7123,7 +7175,7 @@ a.list-item {
 }
 
 .navbar.is-primary {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
@@ -7138,7 +7190,7 @@ a.list-item {
 .navbar.is-primary .navbar-brand .navbar-link:focus,
 .navbar.is-primary .navbar-brand .navbar-link:hover,
 .navbar.is-primary .navbar-brand .navbar-link.is-active {
-  background-color: #e60000;
+  background-color: #2573da;
   color: #fff;
 }
 
@@ -7170,7 +7222,7 @@ a.list-item {
   .navbar.is-primary .navbar-end .navbar-link:focus,
   .navbar.is-primary .navbar-end .navbar-link:hover,
   .navbar.is-primary .navbar-end .navbar-link.is-active {
-    background-color: #e60000;
+    background-color: #2573da;
     color: #fff;
   }
 
@@ -7182,12 +7234,12 @@ a.list-item {
   .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
   .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #e60000;
+    background-color: #2573da;
     color: #fff;
   }
 
   .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
-    background-color: red;
+    background-color: #3A81DE;
     color: #fff;
   }
 }
@@ -11094,7 +11146,7 @@ label.panel-block:hover {
 }
 
 .hero.is-primary {
-  background-color: red;
+  background-color: #3A81DE;
   color: #fff;
 }
 
@@ -11118,7 +11170,7 @@ label.panel-block:hover {
 
 @media screen and (max-width: 1023px) {
   .hero.is-primary .navbar-menu {
-    background-color: red;
+    background-color: #3A81DE;
   }
 }
 
@@ -11131,7 +11183,7 @@ label.panel-block:hover {
 .hero.is-primary a.navbar-item.is-active,
 .hero.is-primary .navbar-link:hover,
 .hero.is-primary .navbar-link.is-active {
-  background-color: #e60000;
+  background-color: #2573da;
   color: #fff;
 }
 
@@ -11164,16 +11216,16 @@ label.panel-block:hover {
 .hero.is-primary .tabs.is-toggle li.is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: red;
+  color: #3A81DE;
 }
 
 .hero.is-primary.is-bold {
-  background-image: linear-gradient(141deg, #cc0022 0%, red 71%, #ff401a 100%);
+  background-image: linear-gradient(141deg, #1585d0 0%, #3A81DE 71%, #4b74e7 100%);
 }
 
 @media screen and (max-width: 768px) {
   .hero.is-primary.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #cc0022 0%, red 71%, #ff401a 100%);
+    background-image: linear-gradient(141deg, #1585d0 0%, #3A81DE 71%, #4b74e7 100%);
   }
 }
 
@@ -11715,5 +11767,555 @@ label.panel-block:hover {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+.has-margin-none {
+  margin: 0;
+}
+
+.has-padding-none {
+  padding: 0;
+}
+
+.has-margin-top-none {
+  margin-top: 0;
+}
+
+.has-padding-top-none {
+  padding-top: 0;
+}
+
+.has-margin-left-none {
+  margin-left: 0;
+}
+
+.has-padding-left-none {
+  padding-left: 0;
+}
+
+.has-margin-bottom-none {
+  margin-bottom: 0;
+}
+
+.has-padding-bottom-none {
+  padding-bottom: 0;
+}
+
+.has-margin-right-none {
+  margin-right: 0;
+}
+
+.has-padding-right-none {
+  padding-right: 0;
+}
+
+.has-margin-1 {
+  margin: 0.25rem;
+}
+
+.has-padding-1 {
+  padding: 0.25rem;
+}
+
+.has-margin-top-1 {
+  margin-top: 0.25rem;
+}
+
+.has-padding-top-1 {
+  padding-top: 0.25rem;
+}
+
+.has-margin-left-1 {
+  margin-left: 0.25rem;
+}
+
+.has-padding-left-1 {
+  padding-left: 0.25rem;
+}
+
+.has-margin-bottom-1 {
+  margin-bottom: 0.25rem;
+}
+
+.has-padding-bottom-1 {
+  padding-bottom: 0.25rem;
+}
+
+.has-margin-right-1 {
+  margin-right: 0.25rem;
+}
+
+.has-padding-right-1 {
+  padding-right: 0.25rem;
+}
+
+.has-margin-2 {
+  margin: 0.5rem;
+}
+
+.has-padding-2 {
+  padding: 0.5rem;
+}
+
+.has-margin-top-2 {
+  margin-top: 0.5rem;
+}
+
+.has-padding-top-2 {
+  padding-top: 0.5rem;
+}
+
+.has-margin-left-2 {
+  margin-left: 0.5rem;
+}
+
+.has-padding-left-2 {
+  padding-left: 0.5rem;
+}
+
+.has-margin-bottom-2 {
+  margin-bottom: 0.5rem;
+}
+
+.has-padding-bottom-2 {
+  padding-bottom: 0.5rem;
+}
+
+.has-margin-right-2 {
+  margin-right: 0.5rem;
+}
+
+.has-padding-right-2 {
+  padding-right: 0.5rem;
+}
+
+.has-margin-3 {
+  margin: 0.75rem;
+}
+
+.has-padding-3 {
+  padding: 0.75rem;
+}
+
+.has-margin-top-3 {
+  margin-top: 0.75rem;
+}
+
+.has-padding-top-3 {
+  padding-top: 0.75rem;
+}
+
+.has-margin-left-3 {
+  margin-left: 0.75rem;
+}
+
+.has-padding-left-3 {
+  padding-left: 0.75rem;
+}
+
+.has-margin-bottom-3 {
+  margin-bottom: 0.75rem;
+}
+
+.has-padding-bottom-3 {
+  padding-bottom: 0.75rem;
+}
+
+.has-margin-right-3 {
+  margin-right: 0.75rem;
+}
+
+.has-padding-right-3 {
+  padding-right: 0.75rem;
+}
+
+.has-margin-4 {
+  margin: 1rem;
+}
+
+.has-padding-4 {
+  padding: 1rem;
+}
+
+.has-margin-top-4 {
+  margin-top: 1rem;
+}
+
+.has-padding-top-4 {
+  padding-top: 1rem;
+}
+
+.has-margin-left-4 {
+  margin-left: 1rem;
+}
+
+.has-padding-left-4 {
+  padding-left: 1rem;
+}
+
+.has-margin-bottom-4 {
+  margin-bottom: 1rem;
+}
+
+.has-padding-bottom-4 {
+  padding-bottom: 1rem;
+}
+
+.has-margin-right-4 {
+  margin-right: 1rem;
+}
+
+.has-padding-right-4 {
+  padding-right: 1rem;
+}
+
+.has-margin-5 {
+  margin: 1.25rem;
+}
+
+.has-padding-5 {
+  padding: 1.25rem;
+}
+
+.has-margin-top-5 {
+  margin-top: 1.25rem;
+}
+
+.has-padding-top-5 {
+  padding-top: 1.25rem;
+}
+
+.has-margin-left-5 {
+  margin-left: 1.25rem;
+}
+
+.has-padding-left-5 {
+  padding-left: 1.25rem;
+}
+
+.has-margin-bottom-5 {
+  margin-bottom: 1.25rem;
+}
+
+.has-padding-bottom-5 {
+  padding-bottom: 1.25rem;
+}
+
+.has-margin-right-5 {
+  margin-right: 1.25rem;
+}
+
+.has-padding-right-5 {
+  padding-right: 1.25rem;
+}
+
+.has-margin-6 {
+  margin: 1.5rem;
+}
+
+.has-padding-6 {
+  padding: 1.5rem;
+}
+
+.has-margin-top-6 {
+  margin-top: 1.5rem;
+}
+
+.has-padding-top-6 {
+  padding-top: 1.5rem;
+}
+
+.has-margin-left-6 {
+  margin-left: 1.5rem;
+}
+
+.has-padding-left-6 {
+  padding-left: 1.5rem;
+}
+
+.has-margin-bottom-6 {
+  margin-bottom: 1.5rem;
+}
+
+.has-padding-bottom-6 {
+  padding-bottom: 1.5rem;
+}
+
+.has-margin-right-6 {
+  margin-right: 1.5rem;
+}
+
+.has-padding-right-6 {
+  padding-right: 1.5rem;
+}
+
+.has-margin-7 {
+  margin: 2rem;
+}
+
+.has-padding-7 {
+  padding: 2rem;
+}
+
+.has-margin-top-7 {
+  margin-top: 2rem;
+}
+
+.has-padding-top-7 {
+  padding-top: 2rem;
+}
+
+.has-margin-left-7 {
+  margin-left: 2rem;
+}
+
+.has-padding-left-7 {
+  padding-left: 2rem;
+}
+
+.has-margin-bottom-7 {
+  margin-bottom: 2rem;
+}
+
+.has-padding-bottom-7 {
+  padding-bottom: 2rem;
+}
+
+.has-margin-right-7 {
+  margin-right: 2rem;
+}
+
+.has-padding-right-7 {
+  padding-right: 2rem;
+}
+
+.has-margin-8 {
+  margin: 2.5rem;
+}
+
+.has-padding-8 {
+  padding: 2.5rem;
+}
+
+.has-margin-top-8 {
+  margin-top: 2.5rem;
+}
+
+.has-padding-top-8 {
+  padding-top: 2.5rem;
+}
+
+.has-margin-left-8 {
+  margin-left: 2.5rem;
+}
+
+.has-padding-left-8 {
+  padding-left: 2.5rem;
+}
+
+.has-margin-bottom-8 {
+  margin-bottom: 2.5rem;
+}
+
+.has-padding-bottom-8 {
+  padding-bottom: 2.5rem;
+}
+
+.has-margin-right-8 {
+  margin-right: 2.5rem;
+}
+
+.has-padding-right-8 {
+  padding-right: 2.5rem;
+}
+
+.has-margin-9 {
+  margin: 3rem;
+}
+
+.has-padding-9 {
+  padding: 3rem;
+}
+
+.has-margin-top-9 {
+  margin-top: 3rem;
+}
+
+.has-padding-top-9 {
+  padding-top: 3rem;
+}
+
+.has-margin-left-9 {
+  margin-left: 3rem;
+}
+
+.has-padding-left-9 {
+  padding-left: 3rem;
+}
+
+.has-margin-bottom-9 {
+  margin-bottom: 3rem;
+}
+
+.has-padding-bottom-9 {
+  padding-bottom: 3rem;
+}
+
+.has-margin-right-9 {
+  margin-right: 3rem;
+}
+
+.has-padding-right-9 {
+  padding-right: 3rem;
+}
+
+.has-margin-10 {
+  margin: 4rem;
+}
+
+.has-padding-10 {
+  padding: 4rem;
+}
+
+.has-margin-top-10 {
+  margin-top: 4rem;
+}
+
+.has-padding-top-10 {
+  padding-top: 4rem;
+}
+
+.has-margin-left-10 {
+  margin-left: 4rem;
+}
+
+.has-padding-left-10 {
+  padding-left: 4rem;
+}
+
+.has-margin-bottom-10 {
+  margin-bottom: 4rem;
+}
+
+.has-padding-bottom-10 {
+  padding-bottom: 4rem;
+}
+
+.has-margin-right-10 {
+  margin-right: 4rem;
+}
+
+.has-padding-right-10 {
+  padding-right: 4rem;
+}
+
+.has-margin-11 {
+  margin: 4.5rem;
+}
+
+.has-padding-11 {
+  padding: 4.5rem;
+}
+
+.has-margin-top-11 {
+  margin-top: 4.5rem;
+}
+
+.has-padding-top-11 {
+  padding-top: 4.5rem;
+}
+
+.has-margin-left-11 {
+  margin-left: 4.5rem;
+}
+
+.has-padding-left-11 {
+  padding-left: 4.5rem;
+}
+
+.has-margin-bottom-11 {
+  margin-bottom: 4.5rem;
+}
+
+.has-padding-bottom-11 {
+  padding-bottom: 4.5rem;
+}
+
+.has-margin-right-11 {
+  margin-right: 4.5rem;
+}
+
+.has-padding-right-11 {
+  padding-right: 4.5rem;
+}
+
+.has-margin-12 {
+  margin: 5rem;
+}
+
+.has-padding-12 {
+  padding: 5rem;
+}
+
+.has-margin-top-12 {
+  margin-top: 5rem;
+}
+
+.has-padding-top-12 {
+  padding-top: 5rem;
+}
+
+.has-margin-left-12 {
+  margin-left: 5rem;
+}
+
+.has-padding-left-12 {
+  padding-left: 5rem;
+}
+
+.has-margin-bottom-12 {
+  margin-bottom: 5rem;
+}
+
+.has-padding-bottom-12 {
+  padding-bottom: 5rem;
+}
+
+.has-margin-right-12 {
+  margin-right: 5rem;
+}
+
+.has-padding-right-12 {
+  padding-right: 5rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.navbar.is-transparent {
+  background-color: transparent;
+  background-image: none;
+}
+
+.navbar .logo {
+  max-height: 15rem;
+  width: 12rem;
+}
+
+.intro-section {
+  background-image: url("/dist/images/background-cover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.read-more-btn {
+  transition: background 2s ease-in-out;
+}
+
+.read-more-btn:hover {
+  background-color: #3A81DE !important;
+  background-image: linear-gradient(90deg, #3A81DE, #3DB6DE) !important;
 }
 

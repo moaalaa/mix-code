@@ -1,0 +1,28 @@
+#have-business-svg {
+
+    .state-1 {
+      animation-name: sliding-up-down;  
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .state-2 {
+        @extend .state-1;
+        animation-delay: 0.5s;
+    }
+
+}
+
+@keyframes sliding-up-down {
+    from {
+        transform: translateY(0);
+    }
+
+    from {
+        transform: translateY(5rem);
+    }
+
+
+}

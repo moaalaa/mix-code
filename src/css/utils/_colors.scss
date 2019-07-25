@@ -1,0 +1,11 @@
+$primary: #3A81DE;
+$primary-gradient: linear-gradient(45deg, #3A81DE, #3DB6DE) !important;
+
+@mixin primary-background-color {
+    background-color: $primary !important;
+    background-image: $primary-gradient;
+}
+
+.has-background-primary {
+    @include primary-background-color()
+}
