@@ -18,10 +18,12 @@
 // Body Styles
 html {
     height: 100% !important;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #F6FAFF;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -65,7 +67,7 @@ body {
 }
 
 // Services
-.services {
+#products-services {
     margin-top: -15rem;
 }
 

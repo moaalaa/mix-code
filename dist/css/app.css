@@ -12570,10 +12570,12 @@ label.panel-block:hover {
 
 html {
   height: 100% !important;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #F6FAFF;
+  scroll-behavior: smooth;
 }
 
 .navbar.is-transparent {
@@ -12611,7 +12613,7 @@ body {
   background-image: linear-gradient(90deg, #3A81DE, #3DB6DE) !important;
 }
 
-.services {
+#products-services {
   margin-top: -15rem;
 }
 
