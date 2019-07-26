@@ -12598,7 +12598,7 @@ body {
 }
 
 .intro-section {
-  background: url("./dist/images/background-cover-v5.svg");
+  background: url("../images/background-cover-v5.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 13rem;
