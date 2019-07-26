@@ -25,11 +25,13 @@
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 #have-business-svg .state-2 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes sliding-up-down {
@@ -37,7 +39,7 @@
     transform: translateY(0);
   }
 
-  from {
+  to {
     transform: translateY(5rem);
   }
 }
@@ -47,8 +49,285 @@
     transform: translateY(0);
   }
 
-  from {
+  to {
     transform: translateY(5rem);
+  }
+}
+
+svg#e-commerce {
+  transform: scale(0.8);
+}
+
+svg#e-commerce:hover {
+  -webkit-animation-name: cart-products;
+          animation-name: cart-products;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#e-commerce:hover .products-count {
+  opacity: 0;
+  -webkit-animation-name: new-item;
+          animation-name: new-item;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#e-commerce .products-count {
+  opacity: 0;
+}
+
+@-webkit-keyframes cart-products {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes cart-products {
+  to {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes new-item {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateX(1rem);
+  }
+
+  60% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes new-item {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateX(1rem);
+  }
+
+  60% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+svg#crm {
+  transform: scale(1.1);
+}
+
+svg#crm:hover {
+  -webkit-animation-name: client-satisfied;
+          animation-name: client-satisfied;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#crm:hover .client-love {
+  -webkit-animation-name: client-love;
+          animation-name: client-love;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#crm:hover .success-bar {
+  -webkit-animation-name: make-visible;
+          animation-name: make-visible;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#crm:hover .success-bar-3,
+svg#crm:hover .success-arrow,
+svg#crm:hover .success-bar-1,
+svg#crm:hover .success-bar-2 {
+  -webkit-animation-name: make-visible;
+          animation-name: make-visible;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#crm:hover .success-bar-2 {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+svg#crm:hover .success-bar-1 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+svg#crm:hover .success-arrow {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+svg#crm .client-love,
+svg#crm .success-bar-1,
+svg#crm .success-bar-2,
+svg#crm .success-bar-3,
+svg#crm:hover .success-bar-2,
+svg#crm:hover .success-bar-1,
+svg#crm:hover .success-arrow,
+svg#crm .success-arrow,
+svg#crm .success-bar {
+  opacity: 0;
+}
+
+@-webkit-keyframes client-satisfied {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes client-satisfied {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes client-love {
+  from {
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(2rem);
+  }
+
+  60% {
+    transform: translateY(-2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes client-love {
+  from {
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(2rem);
+  }
+
+  60% {
+    transform: translateY(-2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@-webkit-keyframes make-visible {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes make-visible {
+  to {
+    opacity: 1;
+  }
+}
+
+svg#cms:hover .chater-1 {
+  -webkit-animation-name: start-chat;
+          animation-name: start-chat;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#cms:hover .chat-1,
+svg#cms:hover .chat-2 {
+  -webkit-animation-name: start-chat-2;
+          animation-name: start-chat-2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+svg#cms:hover .chat-2 {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+svg#cms .chat-1,
+svg#cms:hover .chat-2,
+svg#cms .chat-2 {
+  opacity: 0;
+}
+
+svg#cms .chater-1 {
+  transform: translateX(10rem) translateY(-6rem) scale(1.5);
+}
+
+@-webkit-keyframes start-chat {
+  to {
+    transform: scale(1) translateX(0rem) translateY(0rem);
+  }
+}
+
+@keyframes start-chat {
+  to {
+    transform: scale(1) translateX(0rem) translateY(0rem);
+  }
+}
+
+@-webkit-keyframes start-chat-2 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes start-chat-2 {
+  to {
+    opacity: 1;
   }
 }
 
@@ -12289,9 +12568,12 @@ label.panel-block:hover {
   padding-right: 5rem;
 }
 
-html,
+html {
+  height: 100% !important;
+}
+
 body {
-  height: 100%;
+  background-color: #F6FAFF;
 }
 
 .navbar.is-transparent {
@@ -12304,10 +12586,20 @@ body {
   width: 12rem;
 }
 
+.divider {
+  width: 10rem;
+  height: 3px;
+  border-radius: 2px;
+  box-shadow: #ccc 5px 5px 10px;
+  background-image: linear-gradient(to left, #3A81DE 0, #3DB6DE);
+  margin: 2rem auto;
+}
+
 .intro-section {
-  background-image: url("/dist/images/background-cover.svg");
+  background: url("/dist/images/background-cover-v5.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 13rem;
 }
 
 .read-more-btn {
@@ -12317,5 +12609,13 @@ body {
 .read-more-btn:hover {
   background-color: #3A81DE !important;
   background-image: linear-gradient(90deg, #3A81DE, #3DB6DE) !important;
+}
+
+.services {
+  margin-top: -15rem;
+}
+
+.card {
+  border-radius: 6px;
 }
 

@@ -1,0 +1,28 @@
+<svg id="crm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 654">
+  <defs>
+    <linearGradient id="New_Gradient_Swatch_3" data-name="New Gradient Swatch 3" x1="206.99" y1="433.36" x2="513" y2="433.36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3a81de"/>
+      <stop offset="1" stop-color="#3db6de"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_3-2" x1="247.43" y1="253.51" x2="477.09" y2="253.51" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-3" x1="640.2" y1="296.19" x2="684.36" y2="296.19" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-4" x1="588.41" y1="310.65" x2="632.57" y2="310.65" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-5" x1="536.62" y1="322.69" x2="580.78" y2="322.69" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-6" x1="537.77" y1="215.37" x2="677.2" y2="215.37" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-7" x1="527.79" y1="357.62" x2="694" y2="357.62" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-8" x1="30" y1="281.46" x2="192.06" y2="281.46" xlink:href="#New_Gradient_Swatch_3"/>
+  </defs>
+  <title>crm</title>
+  <g class="client">
+      <path d="M445.51,344.31c-1,.92-2,1.8-3.05,2.68s-2.1,1.78-3.19,2.66q-3.31,2.64-6.82,5.09l-48.2,99-9.61-57,14.26-22.92q-2.59.57-5.24,1a119.42,119.42,0,0,1-13.73,1.63c-2.53.16-5.09.27-7.68.27a123.2,123.2,0,0,1-28.73-3.42L348,396.76l-9,58.05-53.4-104.93c-2.45-1.95-4.84-4-7.15-6.15l-1,.85c-71.49,61.82-70.51,170-70.43,174.58l.07,3.84H513l-.15-4.06C507.77,393.94,457.78,352.61,445.51,344.31Z" style="fill: url(#New_Gradient_Swatch_3)"/>
+      <path d="M362.25,138.68A114.83,114.83,0,1,0,477.09,253.51,115,115,0,0,0,362.25,138.68Z" style="fill: url(#New_Gradient_Swatch_3-2)"/>
+  </g>
+  <g class="success">
+    <rect class="success-bar-1" x="640.2" y="245.61" width="44.17" height="101.17" style="fill: url(#New_Gradient_Swatch_3-3)"/>
+    <rect class="success-bar-2" x="588.41" y="274.51" width="44.17" height="72.27" style="fill: url(#New_Gradient_Swatch_3-4)"/>
+    <rect class="success-bar-3" x="536.62" y="298.6" width="44.16" height="48.18" style="fill: url(#New_Gradient_Swatch_3-5)"/>
+    <path class="success-arrow" d="M632.84,184.83,647,191.76c-30.53,72.36-109.26,66.06-109.26,66.06,76.5,16.66,106.53-23.18,125.53-55.48l13.9,8.35-7-41.69Z" style="fill: url(#New_Gradient_Swatch_3-6)"/>
+    <rect class="success-bar" x="527.79" y="353.6" width="166.21" height="8.03" style="fill: url(#New_Gradient_Swatch_3-7)"/>
+  </g>
+  <path class="client-love" d="M162.42,212.65c-16.56-4.27-38.54.87-51.43,18.28a49.59,49.59,0,0,0-51.83-18.51C41.17,217.23,30,232.2,30,251.5c0,44.12,75.47,97.51,78.68,99.76a4.09,4.09,0,0,0,4.69,0c3.22-2.25,78.69-55.64,78.69-99.76C192.06,232.24,180.7,217.35,162.42,212.65Zm-15.7,100A352.87,352.87,0,0,1,111,342.86a349.76,349.76,0,0,1-35.62-30.15c-24.36-23.79-37.23-45-37.23-61.21,0-15.66,8.63-27.31,23.09-31.17a37.74,37.74,0,0,1,9.8-1.25,41.62,41.62,0,0,1,36.41,21.4,4,4,0,0,0,3.58,2,4.09,4.09,0,0,0,3.55-2.11c10-18.18,30.62-23.74,45.78-19.84,14.71,3.79,23.49,15.35,23.49,30.93C183.88,267.73,171,288.87,146.72,312.64Z" style="fill: url(#New_Gradient_Swatch_3-8)"/>
+</svg>

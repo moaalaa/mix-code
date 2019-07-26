@@ -1,0 +1,46 @@
+svg#cms {
+    // transform: scale(1.1);
+
+    &:hover {
+        .chater-1 {
+            animation-name: start-chat;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .chat-1 {
+            animation-name: start-chat-2;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .chat-2 {
+            @extend .chat-1;    
+            animation-delay: 1.3s;
+        
+        }
+    }
+
+    .chat-1,
+    .chat-2 {
+        opacity: 0;
+    }
+
+    .chater-1 {
+        transform: translateX(10rem) translateY(-6rem) scale(1.5);
+    }
+
+}
+
+@keyframes start-chat {
+    to {
+        transform: scale(1) translateX(0rem) translateY(0rem);
+    }
+}
+
+@keyframes start-chat-2 {
+    to {
+        opacity: 1;
+    }
+}

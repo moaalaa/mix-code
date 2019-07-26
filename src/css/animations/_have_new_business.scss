@@ -6,11 +6,12 @@
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
       animation-direction: alternate;
+      animation-delay: 0.5s;
     }
 
     .state-2 {
         @extend .state-1;
-        animation-delay: 0.5s;
+        animation-delay: 1s;
     }
 
 }
@@ -20,7 +21,7 @@
         transform: translateY(0);
     }
 
-    from {
+    to {
         transform: translateY(5rem);
     }
 

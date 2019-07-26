@@ -1,0 +1,50 @@
+svg#e-commerce {
+    transform: scale(0.8);
+
+    &:hover {
+        animation-name: cart-products;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+
+        .products-count {
+            opacity: 0;
+            animation-name: new-item;
+            animation-duration: 0.5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+
+    .products-count {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes cart-products {
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes new-item {
+    0% {
+        opacity: 1;   
+    }
+
+    30% {
+        transform: translateX(1rem);
+        
+    }
+
+    60% {
+        transform: translateX(-1rem);
+    }
+    
+    100% {
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}

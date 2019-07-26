@@ -6,6 +6,9 @@
 
 // animations
 @import "animations/_have_new_business";
+@import "animations/services/_ecommrce";
+@import "animations/services/_crm";
+@import "animations/services/_cms";
 
 // Bulma
 @import "~bulma/bulma";
@@ -13,8 +16,12 @@
 @import "utils/_spacing";
 
 // Body Styles
-html, body {
-    height: 100%;
+html {
+    height: 100% !important;
+}
+
+body {
+    background-color: #F6FAFF;
 }
 
 .navbar {
@@ -32,11 +39,21 @@ html, body {
     }
 }
 
+.divider {
+    width: 10rem;
+    height: 3px;
+    border-radius: 2px;
+    box-shadow: #ccc 5px 5px 10px;
+    background-image: linear-gradient(to left, #3A81DE 0, #3DB6DE);
+    margin: 2rem auto;
+}
+
 // Intro Section 
 .intro-section {
-    background-image: url("/dist/images/background-cover.svg");
+    background: url("/dist/images/background-cover-v5.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 13rem;
 }
 
 .read-more-btn {
@@ -45,4 +62,13 @@ html, body {
         background-color: $primary !important;
         background-image: linear-gradient(90deg, #3A81DE, #3DB6DE) !important;
     }
+}
+
+// Services
+.services {
+    margin-top: -15rem;
+}
+
+.card {
+    border-radius: 6px;
 }

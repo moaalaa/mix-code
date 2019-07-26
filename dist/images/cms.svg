@@ -1,0 +1,28 @@
+<svg  id="cms" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 654">
+  <defs>
+    <linearGradient id="New_Gradient_Swatch_3" data-name="New Gradient Swatch 3" x1="20" y1="363.52" x2="240.15" y2="363.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3a81de"/>
+      <stop offset="1" stop-color="#3db6de"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_3-2" x1="49.09" y1="234.13" x2="214.31" y2="234.13" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-3" x1="180.05" y1="128.78" x2="385.06" y2="128.78" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-4" x1="-291.9" y1="518.36" x2="-77.82" y2="518.36" gradientTransform="matrix(-1, 0, 0, 1, 402.1, 0)" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-5" x1="-263.61" y1="392.53" x2="-102.94" y2="392.53" gradientTransform="matrix(-1, 0, 0, 1, 402.1, 0)" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-6" x1="-136.26" y1="290.09" x2="63.1" y2="290.09" gradientTransform="matrix(-1, 0, 0, 1, 402.1, 0)" xlink:href="#New_Gradient_Swatch_3"/>
+  </defs>
+  <title>cms</title>
+  
+  <g class="chater-1">
+    <path d="M191.59,299.45c-.72.66-1.46,1.3-2.19,1.93s-1.52,1.28-2.29,1.91q-2.38,1.9-4.91,3.66l-34.68,71.24-6.91-41,10.25-16.48c-1.24.27-2.49.52-3.76.74a87.09,87.09,0,0,1-9.88,1.18c-1.82.11-3.67.19-5.52.19A88.54,88.54,0,0,1,111,320.34l10.41,16.85-6.51,41.75L76.52,303.46q-2.65-2.11-5.15-4.43l-.69.61C19.24,344.12,20,422,20,425.24l0,2.76h220.1l-.12-2.92C236.38,335.16,200.42,305.42,191.59,299.45Z" style="fill: url(#New_Gradient_Swatch_3)"/>
+    <path d="M131.7,151.52a82.61,82.61,0,1,0,82.61,82.61A82.71,82.71,0,0,0,131.7,151.52Z" style="fill: url(#New_Gradient_Swatch_3-2)"/>
+  </g>
+  <path class="chat-1" d="M289.23,180.25c53.49-2.4,95.83-33.48,95.83-71.46,0-39.55-45.9-71.62-102.51-71.62s-102.5,32.07-102.5,71.62c0,30.08,26.55,55.82,64.14,66.43l-16.84,45.17ZM219.6,85.54H346.37v5.88H219.6Zm0,22.21H346.37v5.88H219.6Zm0,28.1V130h68v5.88Z" style="fill: url(#New_Gradient_Swatch_3-3)"/>
+  <g class="chat-2">
+    <g class="chater-2">
+      <path d="M527.14,456.06c.69.64,1.41,1.26,2.13,1.87s1.47,1.25,2.23,1.86c1.54,1.24,3.14,2.43,4.77,3.57L570,532.63l6.72-39.89-10-16c1.21.27,2.43.51,3.66.73a84.6,84.6,0,0,0,9.61,1.13c1.77.12,3.56.2,5.37.2a86,86,0,0,0,20.1-2.4l-10.12,16.38,6.32,40.61L639,460c1.72-1.36,3.39-2.8,5-4.3l.68.6c50,43.25,49.33,118.93,49.27,122.13l0,2.69h-214l.1-2.84C483.58,490.78,518.55,461.87,527.14,456.06Z" style="fill: url(#New_Gradient_Swatch_3-4)"/>
+      <path d="M585.38,312.2A80.34,80.34,0,1,1,505,392.54,80.43,80.43,0,0,1,585.38,312.2Z" style="fill: url(#New_Gradient_Swatch_3-5)"/>
+    </g>
+    <path class="chat-2-2" data-name="chat-2" d="M492.36,379.17,476,335.25c36.56-10.32,62.38-35.35,62.38-64.6,0-38.47-44.63-69.65-99.68-69.65S339,232.18,339,270.65c0,36.93,41.17,67.15,93.19,69.49Zm7.54-125.42H376.62V248H499.9Zm0,21.61H376.62v-5.72H499.9ZM433.81,297v-5.72H499.9V297Z" style="fill: url(#New_Gradient_Swatch_3-6)"/>
+  </g>
+
+</svg>
