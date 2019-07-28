@@ -1,0 +1,46 @@
+svg#mobile-application {
+
+    &:hover {
+
+        .grids {
+            .grid-1 {
+                animation-name: make-visible;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            .grid-2 {
+                @extend .grid-1;
+                animation-delay: 0.2s;
+            }
+
+            .grid-3 {
+                @extend .grid-1;
+                animation-delay: 0.4s;
+            }
+
+            .grid-4 {
+                @extend .grid-1;
+                animation-delay: 0.6s;
+            }
+
+            .grid-5 {
+                @extend .grid-1;
+                animation-delay: 0.8s;
+            }
+
+        }
+
+    }
+
+    .grids {
+        .grid-1,
+        .grid-2,
+        .grid-3, 
+        .grid-4,
+        .grid-5 {
+            opacity: 0;
+        }
+    }
+}
+

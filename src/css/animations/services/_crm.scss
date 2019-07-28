@@ -1,35 +1,28 @@
 svg#crm {
-    transform: scale(1.1);
-
     &:hover {
-        animation-name: client-satisfied;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
-
         .client-love {
             animation-name: client-love;
-            animation-duration: 1s;
-            animation-delay: 0.8s;
+            animation-duration: 0.8s;
             animation-fill-mode: forwards;
         }
 
         .success-bar {
             animation-name: make-visible;
             animation-duration: 0.8s;
-            animation-delay: 1s;
+            animation-delay: 0.8s;
             animation-fill-mode: forwards;
         }
         
         .success-bar-3 {
             animation-name: make-visible;
             animation-duration: 0.8s;
-            animation-delay: 1s;
+            animation-delay: 0.9s;
             animation-fill-mode: forwards;
         }
 
         .success-bar-2 {
             @extend .success-bar-3;
-            animation-delay: 1.1s;
+            animation-delay: 1s;
         }
 
         .success-bar-1 {
@@ -53,12 +46,6 @@ svg#crm {
     }
 }
 
-@keyframes client-satisfied {
-    to {
-        transform: scale(1.2);
-    }
-}
-
 @keyframes client-love {
     from {
         opacity: 1;
@@ -76,11 +63,5 @@ svg#crm {
     to {
         opacity: 1;
         transform: translateY(0rem);
-    }
-}
-
-@keyframes make-visible {
-    to {
-        opacity: 1;
     }
 }

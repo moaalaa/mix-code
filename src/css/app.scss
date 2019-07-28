@@ -3,26 +3,28 @@
 // Utils
 @import 'utils/_colors';
 @import "utils/_sizing";
+@import "utils/_animation";
 
 // animations
 @import "animations/_have_new_business";
 @import "animations/services/_ecommrce";
 @import "animations/services/_crm";
 @import "animations/services/_cms";
+@import "animations/services/_website";
+@import "animations/services/_mobile_application";
+@import "animations/services/_markting";
 
 // Bulma
-@import "~bulma/bulma";
+@import "../../node_modules/bulma/bulma";
 
 @import "utils/_spacing";
 
 // Body Styles
 html {
     height: 100% !important;
-    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #F6FAFF;
     scroll-behavior: smooth;
 }
 
@@ -52,10 +54,9 @@ body {
 
 // Intro Section 
 .intro-section {
-    background: url("/dist/images/background-cover-v5.svg");
+    background: url("../images/background-cover-v5.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 13rem;
+    background-position: top right;
 }
 
 .read-more-btn {

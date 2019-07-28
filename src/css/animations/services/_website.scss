@@ -1,0 +1,78 @@
+svg#website {
+
+    &:hover {
+
+        .menu {
+            .menu-items {
+                .menu-item-1 {
+                    animation-name: make-visible;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                }
+
+                .menu-item-2 {
+                    @extend .menu-item-1;
+                    animation-delay: 0.2s;
+                }
+
+                .menu-item-3 {
+                    @extend .menu-item-1;
+                    animation-delay: 0.4s;
+                }
+            }
+        }
+
+        .grids {
+            .grid-1 {
+                animation-name: make-visible;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            .grid-2 {
+                @extend .grid-1;
+                animation-delay: 0.2s;
+            }
+
+            .grid-3 {
+                @extend .grid-1;
+                animation-delay: 0.4s;
+            }
+
+            .grid-4 {
+                @extend .grid-1;
+                animation-delay: 0.6s;
+            }
+
+            .grid-5 {
+                @extend .grid-1;
+                animation-delay: 0.8s;
+            }
+
+        }
+
+    }
+
+    .menu {
+        .menu-items {
+            .menu-item-1,
+            .menu-item-2,
+            .menu-item-3 {
+                opacity: 0;
+            }
+        }
+    }
+
+    .grids {
+        .grid-1,
+        .grid-2,
+        .grid-3, 
+        .grid-4,
+        .grid-5 {
+            opacity: 0;
+        }
+    }
+
+
+
+}

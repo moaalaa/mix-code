@@ -1,0 +1,29 @@
+svg#marketing {
+
+    &:hover {
+
+        .speaker-effect {
+            animation-name: speaker-effect;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+    }
+
+    .speaker-effect {
+        opacity: 0;
+        
+    }
+}
+
+@keyframes speaker-effect {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

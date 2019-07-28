@@ -1,16 +1,9 @@
 svg#e-commerce {
-    transform: scale(0.8);
 
     &:hover {
-        animation-name: cart-products;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
-
         .products-count {
-            opacity: 0;
             animation-name: new-item;
             animation-duration: 0.5s;
-            animation-delay: 1s;
             animation-fill-mode: forwards;
         }
     }
@@ -21,12 +14,6 @@ svg#e-commerce {
     }
 
 
-}
-
-@keyframes cart-products {
-    to {
-        transform: scale(1);
-    }
 }
 
 @keyframes new-item {
