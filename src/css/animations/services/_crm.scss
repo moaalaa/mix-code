@@ -3,21 +3,24 @@ svg#crm {
         .client-love {
             animation-name: client-love;
             animation-duration: 0.8s;
-            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
         }
 
         .success-bar {
             animation-name: make-visible;
             animation-duration: 0.8s;
             animation-delay: 0.8s;
-            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
         }
         
         .success-bar-3 {
             animation-name: make-visible;
             animation-duration: 0.8s;
             animation-delay: 0.9s;
-            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
         }
 
         .success-bar-2 {

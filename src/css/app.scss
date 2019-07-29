@@ -7,12 +7,19 @@
 
 // animations
 @import "animations/_have_new_business";
+
+// animation - services
 @import "animations/services/_ecommrce";
 @import "animations/services/_crm";
 @import "animations/services/_cms";
 @import "animations/services/_website";
 @import "animations/services/_mobile_application";
 @import "animations/services/_markting";
+
+// animation - educations routes
+@import "animations/educations-routes/_tools_routes";
+@import "animations/educations-routes/_science_routes";
+@import "animations/educations-routes/_useless_routes";
 
 // Bulma
 @import "../../node_modules/bulma/bulma";
@@ -67,11 +74,18 @@ body {
     }
 }
 
-// Services
+// Our Services
 #products-services {
     margin-top: -15rem;
 }
 
 .card {
     border-radius: 6px;
+}
+
+// Education
+#education {
+    background: url("../images/background-2-cover-v3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

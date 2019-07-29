@@ -5,7 +5,8 @@ svg#marketing {
         .speaker-effect {
             animation-name: speaker-effect;
             animation-duration: 1s;
-            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
         }
 
     }

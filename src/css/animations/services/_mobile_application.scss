@@ -6,7 +6,8 @@ svg#mobile-application {
             .grid-1 {
                 animation-name: make-visible;
                 animation-duration: 1s;
-                animation-fill-mode: forwards;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
             }
 
             .grid-2 {

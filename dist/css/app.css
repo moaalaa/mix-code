@@ -121,8 +121,10 @@ svg#crm:hover .client-love {
           animation-name: client-love;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#crm:hover .success-bar {
@@ -132,8 +134,10 @@ svg#crm:hover .success-bar {
           animation-duration: 0.8s;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#crm:hover .success-bar-3, svg#crm:hover .success-bar-2, svg#crm:hover .success-bar-1, svg#crm:hover .success-arrow {
@@ -143,8 +147,10 @@ svg#crm:hover .success-bar-3, svg#crm:hover .success-bar-2, svg#crm:hover .succe
           animation-duration: 0.8s;
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#crm:hover .success-bar-2 {
@@ -260,8 +266,10 @@ svg#website:hover .menu .menu-items .menu-item-1, svg#website:hover .menu .menu-
           animation-name: make-visible;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#website:hover .menu .menu-items .menu-item-2 {
@@ -279,8 +287,10 @@ svg#website:hover .grids .grid-1, svg#website:hover .grids .grid-2, svg#website:
           animation-name: make-visible;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#website:hover .grids .grid-2 {
@@ -322,8 +332,10 @@ svg#mobile-application:hover .grids .grid-1, svg#mobile-application:hover .grids
           animation-name: make-visible;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#mobile-application:hover .grids .grid-2 {
@@ -359,8 +371,10 @@ svg#marketing:hover .speaker-effect {
           animation-name: speaker-effect;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 svg#marketing .speaker-effect {
@@ -388,6 +402,146 @@ svg#marketing .speaker-effect {
   }
   100% {
     opacity: 1;
+  }
+}
+
+svg#tools-routes:hover .tools .tool-1 {
+  -webkit-animation-name: move-left;
+          animation-name: move-left;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+svg#tools-routes:hover .tools .tool-2 {
+  -webkit-animation-name: move-right;
+          animation-name: move-right;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move-left {
+  to {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+}
+
+@keyframes move-left {
+  to {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+}
+
+@-webkit-keyframes move-right {
+  to {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+}
+
+@keyframes move-right {
+  to {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+}
+
+svg#science-routes:hover .science-lamb {
+  -webkit-animation-name: move-up-and-down;
+          animation-name: move-up-and-down;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move-up-and-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes move-up-and-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+svg#useless-routes:hover .useless {
+  -webkit-animation-name: mark-as-useless;
+          animation-name: mark-as-useless;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes mark-as-useless {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  50% {
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes mark-as-useless {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  50% {
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -12560,5 +12714,11 @@ body {
 
 .card {
   border-radius: 6px;
+}
+
+#education {
+  background: url("../images/background-2-cover-v3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=app.css.map */

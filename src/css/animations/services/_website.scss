@@ -7,7 +7,8 @@ svg#website {
                 .menu-item-1 {
                     animation-name: make-visible;
                     animation-duration: 1s;
-                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+                    animation-iteration-count: infinite;
                 }
 
                 .menu-item-2 {
@@ -26,7 +27,8 @@ svg#website {
             .grid-1 {
                 animation-name: make-visible;
                 animation-duration: 1s;
-                animation-fill-mode: forwards;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
             }
 
             .grid-2 {

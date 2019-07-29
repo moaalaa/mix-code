@@ -1,0 +1,29 @@
+svg#useless-routes {
+    &:hover {
+        .useless {
+            animation-name: mark-as-useless;
+            animation-duration: 0.8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+
+}
+
+@keyframes mark-as-useless {
+    0% {
+        transform: translateX(0);
+    }
+    
+    25% {
+        transform: translateX(5rem);
+    }
+
+    50% {
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
