@@ -12745,6 +12745,11 @@ label.panel-block:hover {
 html {
   height: 100% !important;
   scroll-behavior: smooth;
+  width: 100% !important;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .navbar.is-transparent {
