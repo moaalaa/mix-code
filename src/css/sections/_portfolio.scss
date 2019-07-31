@@ -1,0 +1,11 @@
+#portfolio {
+    background: url("../images/svg/backgrounds/portfolio-background.min.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@include touch {
+    #portfolio {
+        background: none;
+    }
+}

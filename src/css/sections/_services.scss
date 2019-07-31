@@ -1,0 +1,15 @@
+#our-services {
+    margin-top: -14rem;
+}
+
+@include touch {
+    #our-services {
+        margin-top: 0rem;
+        
+        h2 {
+            color: $grey-dark !important;
+        }
+    }
+
+
+}

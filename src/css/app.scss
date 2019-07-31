@@ -23,9 +23,14 @@
 
 // Bulma
 @import "../../node_modules/bulma/bulma";
-@import "../../node_modules/bulma-pageloader/dist/css/bulma-pageloader";
 
 @import "utils/_spacing";
+
+@import "sections/_intro";
+@import "sections/_services";
+@import "sections/_educations";
+@import "sections/_portfolio";
+@import "sections/_about";
 
 ::-moz-selection {
     background-color: #2ecc71;
@@ -40,11 +45,9 @@
 // Body Styles
 html {
     height: 100% !important;
-}
-
-body {
     scroll-behavior: smooth;
 }
+
 
 .navbar {
     &.is-transparent {
@@ -70,49 +73,8 @@ body {
     margin: 2rem auto;
 }
 
-// Intro Section 
-.intro-section {
-    background: url("../images/background-cover-v5.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-}
-
-.read-more-btn {
-    transition: background 2s ease-in-out;
-    &:hover {
-        background-color: $primary !important;
-        background-image: linear-gradient(90deg, #3A81DE, #3DB6DE) !important;
-    }
-}
-
-// Our Services
-#products-services {
-    margin-top: -15rem;
-}
-
 .card {
     border-radius: 6px;
-}
-
-// Education
-#education {
-    background: url("../images/background-2-cover-v3.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-// Portfolio
-#portfolio {
-    background: url("../images/background-3-cover.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-// About
-#about {
-    background: url("../images/background-4-cover.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .footer {

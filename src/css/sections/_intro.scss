@@ -1,0 +1,15 @@
+// Intro Section 
+.intro-section {
+    background: url("../images/svg/backgrounds/intro-background.min.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding-bottom: 12rem;
+}
+
+@include touch {
+    .intro-section {
+        padding-bottom: 0rem;
+    }
+
+}

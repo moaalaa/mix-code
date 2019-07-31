@@ -1,0 +1,14 @@
+#about {
+    background: url("../images/svg/backgrounds/about-background.min.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@include touch {
+    #about {
+        background: url("../images/svg/backgrounds/about-background-touch-screens.min.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+    }
+}

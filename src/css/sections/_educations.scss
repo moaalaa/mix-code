@@ -1,0 +1,14 @@
+#education {
+    background: url("../images/svg/backgrounds/education-background.min.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@include touch {
+    #education {
+        background: url("../images/svg/backgrounds/education-background-touch-screens.min.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+    }
+}
