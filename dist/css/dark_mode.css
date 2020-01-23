@@ -1,0 +1,29 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #373737;
+    color: white;
+  }
+
+  .card {
+    background-color: #373737;
+    color: white;
+  }
+  .card h3, .card p {
+    color: white;
+  }
+
+  h2.has-text-grey-dark, p.has-text-grey-dark {
+    color: white !important;
+  }
+
+  .menu .menu-list a {
+    color: white !important;
+  }
+  .menu .menu-list a:hover {
+    color: #4a4a4a !important;
+  }
+
+  .divider {
+    box-shadow: #484141 5px 5px 10px;
+  }
+}

@@ -12,7 +12,11 @@ let mix = require('laravel-mix');
  */
 
 
-mix.sass('src/css/app.scss', 'dist/css/');
+mix.sass('src/css/app.scss', 'dist/css/')
+    .sass('src/css/dark_mode.scss', 'dist/css/')
+    .options({
+        processCssUrls: false
+    });
 
 mix.js('src/js/app.js', 'dist/js/');
 

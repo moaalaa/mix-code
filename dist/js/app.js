@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY3NzL2FwcC5zY3NzP2ZiMzIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9zcmMvY3NzL2FwcC5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/css/app.scss\n");
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY3NzL2FwcC5zY3NzP2E3ODYiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9zcmMvY3NzL2FwcC5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/css/app.scss\n");
+
+/***/ }),
+
+/***/ "./src/css/dark_mode.scss":
+/*!********************************!*\
+  !*** ./src/css/dark_mode.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY3NzL2RhcmtfbW9kZS5zY3NzPzY4MDMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9zcmMvY3NzL2RhcmtfbW9kZS5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/css/dark_mode.scss\n");
 
 /***/ }),
 
@@ -120,14 +131,15 @@ eval("$(document).ready(function () {\n  // Check for click events on the navbar
 /***/ }),
 
 /***/ 0:
-/*!************************************************!*\
-  !*** multi ./src/js/app.js ./src/css/app.scss ***!
-  \************************************************/
+/*!*************************************************************************!*\
+  !*** multi ./src/js/app.js ./src/css/app.scss ./src/css/dark_mode.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\myWork\mix-code\mix-code\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\myWork\mix-code\mix-code\src\css\app.scss */"./src/css/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\myWork\mix-code\mix-code\src\css\app.scss */"./src/css/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\myWork\mix-code\mix-code\src\css\dark_mode.scss */"./src/css/dark_mode.scss");
 
 
 /***/ })

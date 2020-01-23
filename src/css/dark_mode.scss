@@ -1,0 +1,37 @@
+$dark-background-color: #373737;
+$light-background-color: white;
+
+$dark-text-color: #4a4a4a;
+$light-text-color: white;
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: #373737;
+        color: $light-text-color;
+    }
+
+    .card {
+        background-color: $dark-background-color;
+        color: $light-text-color;
+
+        h3, p {
+            color: $light-text-color;
+        }
+    }
+
+    h2.has-text-grey-dark, p.has-text-grey-dark{
+        color: $light-text-color !important;
+    }
+
+    .menu .menu-list a {
+        color: $light-text-color !important;
+
+        &:hover {
+            color: $dark-text-color !important;
+        }
+    }
+
+    .divider {
+        box-shadow: #484141 5px 5px 10px;
+    }
+}
