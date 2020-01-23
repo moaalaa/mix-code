@@ -10,6 +10,10 @@ $light-text-color: white;
         color: $light-text-color;
     }
 
+    #our-services h2 {
+        color: $light-text-color !important;
+    }
+
     .card {
         background-color: $dark-background-color;
         color: $light-text-color;
