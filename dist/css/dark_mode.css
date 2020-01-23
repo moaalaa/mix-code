@@ -4,6 +4,10 @@
     color: white;
   }
 
+  #our-services h2 {
+    color: white !important;
+  }
+
   .card {
     background-color: #373737;
     color: white;
