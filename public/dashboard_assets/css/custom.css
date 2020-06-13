@@ -1,0 +1,43 @@
+.required::after {
+    content: " *";
+    color: #f4516c;
+}
+
+.is-invalid .select2-selection {
+    border-color: #e74a3b !important;
+}
+
+.fileinput .thumbnail,
+.fileinput .thumbnail img {
+    max-width: 12rem;
+    max-height: 12rem;
+}
+
+.card-custom-image {
+    border-radius: 0;
+    max-height: 400px;
+}
+
+.fixed-image-size {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.custom-navbar-brand {
+    width: 15rem;
+}
+
+a.d-sm-inline-block.btn.btn-sm.shadow-sm {
+    margin-right: 0.5em;
+}
+
+.image-container .delete-settings-image, 
+.image-container .delete-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+p span[dir=ltr] {
+    text-align: left !important;
+}

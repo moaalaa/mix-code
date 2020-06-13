@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -7,20 +7,21 @@ let mix = require('laravel-mix');
  |
  | Mix provides a clean, fluent API for defining some Webpack build steps
  | for your Laravel application. By default, we are compiling the Sass
- | file for your application, as well as bundling up your JS files.
+ | file for the application as well as bundling up all the JS files.
  |
  */
+mix.scripts([
+    'public/assets/lib/js/jquery-3.3.1.min.js',
+    'public/assets/lib/js/popper.min.js',
+    'public/assets/lib/js/bootstrap.min.js',
+    'public/assets/lib/js/jquery-ui.min.js',
+    'public/assets/lib/js/owl.carousel.min.js',
+    'public/assets/lib/js/aos.js',
+], 'public/assets/js/vendors.js');
 
-
-mix.sass('src/css/app.scss', 'dist/css/')
-    .sass('src/css/dark_mode.scss', 'dist/css/')
-    .options({
-        processCssUrls: false
-    });
-
-mix.js('src/js/app.js', 'dist/js/');
-
-mix.sourceMaps(); // Enable sourcemaps
-
-// mix.version(); // Enable versioning.
-
+// mix.js('resources/js/app.js', 'public/assets/js');
+		
+if (mix.inProduction()) {
+    mix.sourceMaps();
+    mix.version();
+}

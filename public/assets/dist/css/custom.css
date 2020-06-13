@@ -1,0 +1,42 @@
+img.card-img-top {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.card.mb-2 {
+    align-items: center;
+}
+
+.carousel-item{
+  text-align: center;
+}
+
+
+.controls-top {
+    text-align: center !important;
+    /* padding-top: 10px; */
+    margin-top: 17px !important;
+    /* padding: 4px; */
+}
+
+
+.btn-floating {
+    color: #337ab7;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #3CA8DE !important;
+    color: #fff  !important;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.visit-link{
+
+}
