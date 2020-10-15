@@ -1,0 +1,41 @@
+<svg id="website" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 654">
+  <title>website</title>
+  
+  <g class="background" style="opacity: 0.10000000149011612">
+    <path d="M56,76.15c6.3,13.49,2.81,31-4,44.08S35.4,143.69,27.81,156.17c-15.08,24.89-19,64.21,0,84.67,4.09,4.4,9.16,7.89,11.66,13.83,3.45,8.2.89,18.08-1.71,26.77l-.21.72c-9.83,32.77,4.65,69.1,31.8,79.38,15,5.69,28.57,14.92,38.61,29.84,8.77,13,13.83,29.13,19.62,44.48,10.45,27.73,23.95,54.25,42.6,74.44s43,33.57,67.82,32.47c56.74-2.51,98.52-76,155.2-79.86,4.08-.28,8.43-.09,11.85,2.67,4.82,3.91,6.3,11.58,8.33,18.24,10.73,35.29,43.05,51.55,72,63.91L539.78,571c29.54,12.61,60.56,25.42,91.45,19.57s61.07-37,59.73-75.47c-1.1-31.56-22.37-59.34-19.59-90.75,1.93-21.7,15.15-39.93,17.36-61.6,2.31-22.55-7.72-44.2-19.25-62C636.28,249.67,589,216,542.8,183.5c-32.52-22.89-65.21-45.88-100.22-62.32-86.31-40.44-181.17-38.7-273.12-49.73-15.81-1.9-32.34-4.14-46.83-12.73-11.13-6.6-19.82-21.85-32-25.08-9.3-2.46-23,2.62-31.17,8.17C44.63,52,48.71,60.5,56,76.15Z" style="fill: #536dfe"/>
+  </g>
+  <g class="window">
+    <g class="window-layout">
+      <path d="M35.5,176.5h649a0,0,0,0,1,0,0V483.87a12.63,12.63,0,0,1-12.63,12.63H48.13A12.63,12.63,0,0,1,35.5,483.87V176.5A0,0,0,0,1,35.5,176.5Z" style="fill: #fff;stroke: #3498db;stroke-miterlimit: 10;stroke-width: 0.9976728253185528px"/>
+      <path d="M47,122H673a12,12,0,0,1,12,12v42a0,0,0,0,1,0,0H35a0,0,0,0,1,0,0V134A12,12,0,0,1,47,122Z" style="fill: #3498db"/>
+      <line x1="205.5" y1="175.5" x2="205.5" y2="496.5" style="fill: none;stroke: #3498db;stroke-miterlimit: 10;stroke-width: 0.9984519529853809px"/>
+    </g>
+    <g class="window-buttons">
+      <circle cx="74.12" cy="149.5" r="10.5" style="fill: #e74c3c"/>
+      <circle cx="105.62" cy="149.5" r="10.5" style="fill: #f1c40f"/>
+      <circle cx="135.5" cy="149.5" r="10.5" style="fill: #2ecc71"/>
+    </g>
+  </g>
+  <g class="grids">
+    <rect class="grid-1" x="222.5" y="193.5" width="216" height="101" rx="12" ry="12" style="fill: #ecf0f1"/>
+    <rect class="grid-2" x="455" y="193" width="216" height="101" rx="12" ry="12" style="fill: #ecf0f1"/>
+    <rect class="grid-3" x="222" y="317" width="109" height="101" rx="8.52" ry="8.52" style="fill: #ecf0f1"/>
+    <rect class="grid-4" x="360" y="317" width="311" height="101" rx="14.4" ry="14.4" style="fill: #ecf0f1"/>
+    <rect class="grid-5" x="222" y="436" width="449" height="50" rx="12.17" ry="12.17" style="fill: #ecf0f1"/>
+  </g>
+  <g class="menu">
+    <g class="user-profile">
+      <circle cx="122.03" cy="265.5" r="64" style="fill: #e74c3c"/>
+      <g>
+        <circle cx="122.03" cy="249.33" r="27.83" style="fill: #fff"/>
+        <path d="M163.37,309.5H80.68a24.42,24.42,0,0,1,24.38-23.32H139A24.41,24.41,0,0,1,163.37,309.5Z" style="fill: #fff"/>
+      </g>
+    </g>
+    <g class="menu-items">
+      <rect class="menu-item-3" x="58" y="441" width="128" height="20" rx="10" ry="10" style="fill: #2ecc71"/>
+      <rect class="menu-item-2" x="58" y="400" width="128" height="20" rx="10" ry="10" style="fill: #2ecc71"/>
+      <rect class="menu-item-1" x="58" y="355" width="128" height="20" rx="10" ry="10" style="fill: #2ecc71"/>
+    </g>
+  </g>
+
+</svg>
