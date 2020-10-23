@@ -158,5 +158,6 @@ return [
     'discover_works'            => 'Work Samples',
     'all'                       => 'All',
     "team_leaders"              => "Team leaders",
-    "portfolio"                 =>"Portfolio"
+    "portfolio"                 =>"Portfolio",
+    "our_clients"               => "Our Clients"
  ];

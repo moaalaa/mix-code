@@ -159,4 +159,5 @@ return [
     'all'                       => 'الكل',
     "team_leaders"              =>"قادة الفريق",
     "portfolio"                 => "سابقة الاعمال",
+    "our_clients"               =>"عملائنا",
 ];

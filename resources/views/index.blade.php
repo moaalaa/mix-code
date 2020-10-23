@@ -21,7 +21,7 @@
   <!-- End Why Us Section -->
 
   <!-- ======= Portfolio Section ======= -->
-  @include('layouts.includes._portfolio')  
+  @include('layouts.includes._portfolio')
   <!-- End Portfolio Section -->
 
   <!-- ======= Testimonials Section ======= -->
@@ -100,7 +100,7 @@
 
       <div class="row">
 
-        <div class="col-lg-6 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-delay="100">
           <div class="member">
             <img src="{{ asset('/assets/img/hamza-1.jpg') }} " class="img-fluid team-image" alt="">
             <div class="member-info">
@@ -108,17 +108,16 @@
                 <h4>Hamza Omar</h4>
                 <span>Team Leader and business consultant</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/hamza.omar.37"><i class="fa fa-facebook"></i></a>
+
+                  <a href="https://www.linkedin.com/in/hamza-omer-799b8781"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6" data-aos="zoom-out" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-delay="200">
           <div class="member">
             <img src="{{ asset('/assets/img/alaa-1.jpg') }} " class="img-fluid  team-image" alt="">
             <div class="member-info">
@@ -126,23 +125,38 @@
                 <h4>Mohammed Alaa Eldin</h4>
                 <span>Projects Manager And Technical Head</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/alaaDragneel"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/mohamed-alaa-el-din-mohamed/"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-delay="200">
+          <div class="member">
+            <img src="{{ asset('/assets/img/mazen-1.jpg') }} " class="img-fluid  team-image" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Mohammed Mazen</h4>
+                <span>Mobile Apps Manager</span>
+                <div class="social">
+                  <a href="https://www.facebook.com/mohmdmazin"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/mohamedmazin/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </section><!-- End Team Section -->
 
   <!-- ======= Clients Section ======= -->
-    @include('layouts.includes._clients')
+  @include('layouts.includes._clients')
   <!-- End Clients Section -->
 
   <!-- ======= Contact Section ======= -->
@@ -155,50 +169,67 @@
 
       <div class="row">
 
+        @php
+        $settings = getSettings();
+        @endphp
+
 
         <div class="col-lg-12">
           <div class="row">
 
             <div class="col-md-6 info">
               <i class="ion-ios-email-outline"></i>
-              <p>info@mix-code.com</p>
+              <p>{{  $settings->email}}</p>
             </div>
             <div class="col-md-6 info">
               <i class="ion-ios-telephone-outline"></i>
-              <p>+201092462941</p>
+              <p>{{  $settings->phone}}</p>
             </div>
           </div>
 
           <div class="form">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form class="form" action="{{ route('contacts.store') }}" method="post">
+              @csrf
               <div class="form-row">
                 <div class="form-group col-lg-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                  <input type="text" name="name"
+                  class="form-control @error('name') is-invalid @enderror"
+                  placeholder="@lang('main.name')" value="{{ old('name') }}" required>                  @error('name')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
                 </div>
                 <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
+                  <input type="email" name="email"
+                  class="form-control @error('email') is-invalid @enderror"
+                  placeholder="@lang('main.email')" value="{{ old('email') }}" required>                  @error('email')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                <input type="text" name="phone"
+                class="form-control @error('phone') is-invalid @enderror"
+                placeholder="@lang('main.phone')" value="{{ old('phone') }}">                @error('phone')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
+                <textarea name="message" class="form-control @error('message') is-invalid @enderror"
+                                        placeholder="@lang('main.message')" required>{{ old('message') }}</textarea>
+                  @error('message')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+
+              <div class="text-center"><button type="submit" class="btn btn-primary" title="Send Message">Send Message</button></div>
             </form>
           </div>
         </div>

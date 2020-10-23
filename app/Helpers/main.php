@@ -105,3 +105,13 @@ function shortCleanString($content, $limit = 100, $end = '...')
 
     return html_entity_decode(strip_tags(trim($content)));
 }
+
+
+function notifyMainNotificationMail($notification) 
+{
+    $main_notification_mail = config('defaults.system.main_notification_mail');
+    
+    if (!! $main_notification_mail) {
+        \Notification::route('mail', $main_notification_mail)->notify($notification);
+    }
+}

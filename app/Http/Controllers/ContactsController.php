@@ -22,7 +22,7 @@ class ContactsController extends Controller
 
     public function store(ContactsRequest $request)
     {
-        Contact::create($request->validated());
+        Contact::create($request->validated())->notifyAdminsForNewMessage();
         
         notify('success', trans('main.thanks_for_your_message'));
 

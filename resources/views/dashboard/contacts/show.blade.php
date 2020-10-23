@@ -62,6 +62,18 @@
                             <hr>
                         </div>
 
+
+
+                               {{-- phone --}}
+                               <div class="col-md-6 col-sm-12">
+                                <div class="h6">
+                                    <span class="font-weight-bold">@lang('main.phone'): </span>
+    
+                                    <span class="text-muted">{{ $contact->phone }}</span>
+                                </div>
+                                <hr>
+                            </div>
+
                     </div>
                 </div>
 

@@ -58,7 +58,7 @@
 
       </div>
 
-      <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+      {{-- <div class="row counters" data-aos="fade-up" data-aos-delay="100">
 
         <div class="col-lg-4 col-6 text-center">
           <span data-toggle="counter-up">200</span>
@@ -77,7 +77,7 @@
 
 
 
-      </div>
+      </div> --}}
 
     </div>
   </section>

@@ -58,22 +58,33 @@
         </div>
       </div>
 
-      <div class="row about-extra">
+      <div class="row about-extra about-container">
         <div class="col-lg-6" data-aos="fade-right">
           <img src="{{ asset('/assets/img/about-extra-1.svg') }} " class="img-fluid" alt="">
         </div>
-        <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
+        <div class="col-lg-6 pt-5 pt-lg-0  " data-aos="fade-left">
           <h4>Science Routes</h4>
           <h6>LEARN CONCEPTS OF PROGRAMMING SCIENCE AND PROGRAMMING SCIENCE IT SELF.</h6>
           <p>
-                 Learn How ”X” Work Under the Hood to Produce a Significant Result.
-                 Improve Your Personality as a Developer.
+ 
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="fa fa-book"></i></div>
+            <h4 class="title"> Education </h4>
+              <p class="description">Learn How ”X” Work Under the Hood to Produce a Significant Result.</p>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="fa fa-hand-o-up"></i></div>
+            <h4 class="title"> Improvement </h4>
+              <p class="description"> Improve Your Personality as a Developer.</p>
+          </div>
+
+ 
           </p>
         
         </div>
       </div>
 
-      <div class="row about-extra">
+      <div class="row about-extra  about-container">
         <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
           <img src="{{ asset('/assets/img/about-extra-2.svg') }} " class="img-fluid" alt="">
         </div>
@@ -84,9 +95,27 @@
           <p>
 LEARN TRADITIONAL TOOLS IN SOFTWARE ENGINEERING.
 <br>
-Learn Why Useless and Boring Stuff are Very Important for Your Development.
-Small Details Will Make A Significant Different in Bigger Application.
-Learn How to Make it Easy For The One Who Comes After You.
+
+<div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+  <div class="icon "><i class="fa fa-lightbulb-o"></i></div>
+  <h4 class="title"> Useless and Boring </h4>
+     <p class="description"> Learn Why Useless and Boring Stuff are Very Important for Your Development.
+    </p>
+</div>
+
+<div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+  <div class="icon "><i class="fa fa-battery-full"></i></div>
+  <h4 class="title"> Small Details </h4>
+    <p class="description"> Small Details Will Make A Significant Different in Bigger Application.    </p>
+</div>
+
+<div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+  <div class="icon "><i class="fa fa-handshake-o"></i></div>
+  <h4 class="title"> Team Work </h4>
+     <p class="description">Learn How to Make it Easy For The One Who Comes After You.</p>
+</div>
+
+
           </p>
          
         </div>

@@ -78,7 +78,7 @@
                             <div class="form-group my-4 row">
                                 <label class="col-sm-2 col-form-label" for="en_type">@lang('main.en_type')<span class="required"></span> </label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="en_type" value="{{ $portfolio->en_type }}" id="en_type" class="form-control @error('en_type') is-invalid @enderror" placeholder="@lang('main.en_type')" required>
+                                    <input type="text" name="en_type" value="{{ $client->en_type }}" id="en_type" class="form-control @error('en_type') is-invalid @enderror" placeholder="@lang('main.en_type')" required>
                                     @error('en_type')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -91,7 +91,7 @@
                             <div class="form-group mb-4 row">
                                 <label class="col-sm-2 col-form-label" for="ar_type">@lang('main.ar_type')<span class="required"></span> </label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="ar_type" value="{{ $portfolio->ar_type }}" id="ar_type" class="form-control @error('ar_type') is-invalid @enderror" placeholder="@lang('main.ar_type')" required>
+                                    <input type="text" name="ar_type" value="{{ $client->ar_type }}" id="ar_type" class="form-control @error('ar_type') is-invalid @enderror" placeholder="@lang('main.ar_type')" required>
                                     @error('ar_type')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -106,7 +106,7 @@
              <label class="col-sm-2 col-form-label" for="en_overview">@lang('main.en_overview')<span class="required"></span> </label>
              <div class="col-sm-10">
                  <textarea type="text" name="en_overview" id="en_overview" class="form-control @error('en_overview') is-invalid @enderror" placeholder="@lang('main.en_overview')" required>
-                     {{ $portfolio->en_overview }}
+                     {{ $client->en_overview }}
                  </textarea>
                  @error('en_overview')
                      <div class="invalid-feedback">
@@ -121,7 +121,7 @@
              <label class="col-sm-2 col-form-label" for="ar_overview">@lang('main.ar_overview')<span class="required"></span> </label>
              <div class="col-sm-10">
                  <textarea type="text" name="ar_overview" id="ar_overview" class="form-control @error('ar_overview') is-invalid @enderror" placeholder="@lang('main.ar_overview')" required>
-                     {{ $portfolio->ar_overview }}
+                     {{ $client->ar_overview }}
                  </textarea>
                  @error('ar_overview')
                      <div class="invalid-feedback">

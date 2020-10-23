@@ -28,6 +28,9 @@ Route::get('auth/{provider}/callback', 'Auth\\SocialAuthController@handleProvide
 Route::get('/', "HomeController@index")->name('get_all');
 Route::get('/clients/{client}', "ClientsController@show")->name('client_details');
 
+
+Route::post('/contact-us/store', 'ContactsController@store')->name('contacts.store');
+
  
  
 

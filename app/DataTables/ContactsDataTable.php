@@ -68,6 +68,15 @@ class ContactsDataTable extends DataTable
                 'orderable'  => true,
                 'width'          => '200px',
             ],
+
+            [
+                'name' => "phone",
+                'data'    => 'phone',
+                'title'   => trans('main.phone'),
+                'searchable' => true,
+                'orderable'  => true,
+                'width'          => '200px',
+            ],
             [
                 'name' => 'show',
                 'data' => 'show',
