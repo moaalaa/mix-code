@@ -595,9 +595,10 @@ section {
 
 
 h6.about-description {
-  margin-top: 17px;
+  margin-top: 8px;
   margin-bottom: 28px;
   font-size: revert;
+  line-height: 2;
 }
 
 
@@ -947,7 +948,7 @@ img.service-img {
 }
 
 .portfolio-card {
-  width: 303px;
+  /* width: 303px; */
   height: 400px;
   padding: 1rem;
   margin: 1rem;
