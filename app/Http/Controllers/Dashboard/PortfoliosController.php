@@ -66,7 +66,7 @@ class PortfoliosController extends Controller
     public function store(PortfoliosRequest $request, Portfolio $portfolio)
     { 
         
-        $portfolio = $portfolio->createNewPortfolio($request);
+        $portfolio = $portfolio->create($request->all());
 
         if ($request->has('images')) {
             $portfolio->uploadSingleMediaFromRequest('images');
@@ -87,7 +87,7 @@ class PortfoliosController extends Controller
     {
         $sectionName = trans('main.show') . ' ' . $portfolio->name_by_lang;
 
-        $portfolio->load(['media', 'categories','client']);
+        $portfolio->load(['media', 'category','client']);
 
         return view("{$this->viewPath}.show", compact('sectionName', 'portfolio'));
     }
@@ -127,7 +127,7 @@ class PortfoliosController extends Controller
     {
     
 
-        $portfolio = $portfolio->updatePortfolio($request);
+        $portfolio = $portfolio->update($request->all());
 
         
         if ($request->has('images')) {
@@ -147,8 +147,7 @@ class PortfoliosController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        $this->authorize('delete', $portfolio);
-
+ 
         $portfolio->delete();
 
         notify('success', trans('main.deleted-message'));
@@ -190,8 +189,7 @@ class PortfoliosController extends Controller
     {
         $portfolio = Portfolio::onlyTrashed()->find($id);
 
-        $this->authorize('restore', $portfolio);
-
+ 
         $portfolio->restore();
 
         notify('success', trans('main.restored'));
@@ -203,8 +201,7 @@ class PortfoliosController extends Controller
     {
         $portfolio = Portfolio::onlyTrashed()->find($id);
 
-        $this->authorize('forceDelete', $portfolio);
-        
+         
         $portfolio->forceDelete();
 
         notify('success', trans('main.deleted-message'));
@@ -214,8 +211,7 @@ class PortfoliosController extends Controller
 
     public function destroyMedia(Portfolio $portfolio, Request $request)
     {    
-        $this->authorize('view', $portfolio);
-
+ 
         if (! $portfolio) {
             return response()->json(['status' => false, 'message' => trans('main.not_found')]);
         }

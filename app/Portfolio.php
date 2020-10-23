@@ -37,10 +37,11 @@ class Portfolio extends Model implements HasMedia
         'media_links', 
     ];
    
-   protected $with = ['media','categories','client'];
+   protected $with = ['media','category','client'];
 
    protected $fillable = [
     'client_id',
+    'category_id',
     'url',
     'status',
     'creator_id'
@@ -56,15 +57,7 @@ protected static function boot()
 {
     parent::boot();
 
-    // When Deleting portfolio
-    static::deleting(function (Portfolio $portfolio) {
-        // Clear portfolio Views Relation
-        $portfolio->views()->detach();
-
-        // Clear portfolio Views Field
-        $portfolio->views_count = 0;
-        $portfolio->save();
-    });
+ 
 }
 
 public function path()
@@ -84,11 +77,16 @@ public function viewPath()
 
  
 
-public function categories()
+// public function categories()
+// {
+//     return $this->belongsToMany(Category::class, 'portfolio_categories', 'portfolio_id', 'category_id')
+//         ->using(PortfolioCategory::class)
+//         ->withoutGlobalScopes();
+// }
+
+public function category()
 {
-    return $this->belongsToMany(Category::class, 'portfolio_categories', 'portfolio_id', 'category_id')
-        ->using(PortfolioCategory::class)
-        ->withoutGlobalScopes();
+    return $this->belongsTo(Category::class, 'category_id')->withoutGlobalScopes();
 }
 
 
@@ -118,35 +116,35 @@ public function creator()
 
  
 
-/**
- * Create New portfolios With It's Relations
- *
- * @param Request $request
- * @return void
- */
-public function createNewPortfolio($request)
-{
-    $portfolio = static::create($request->all());
+// /**
+//  * Create New portfolios With It's Relations
+//  *
+//  * @param Request $request
+//  * @return void
+//  */
+// public function createNewPortfolio($request)
+// {
+//     $portfolio = static::create($request->all());
 
-    $portfolio->categories()->attach($request->categories_id); 
-    return $portfolio;
-}
+//     $portfolio->categories()->attach($request->categories_id); 
+//     return $portfolio;
+// }
 
-/**
- * Update portfolios With It's Relations
- *
- * @param Request $request
- * @return void
- */
-public function updatePortfolio($request)
-{
-    static::update($request->all());
+// /**
+//  * Update portfolios With It's Relations
+//  *
+//  * @param Request $request
+//  * @return void
+//  */
+// public function updatePortfolio($request)
+// {
+//     static::update($request->all());
 
-    $this->categories()->sync($request->categories_id);
-    // $this->companies()->sync($request->companies_id);
+//     $this->categories()->sync($request->categories_id);
+//     // $this->companies()->sync($request->companies_id);
 
-    return $this;
-}
+//     return $this;
+// }
  
  
 

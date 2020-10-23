@@ -89,7 +89,7 @@ class Category extends Model implements HasMedia
      */
     protected function hasLang() 
     {
-        return (request()->has('lang') && request()->filled('lang')) ? request('lang') : 'ar';
+        return (request()->has('lang') && request()->filled('lang')) ? request('lang') : 'en';
     }
 
     public function getIconAttribute()

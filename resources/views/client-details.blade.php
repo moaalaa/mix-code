@@ -45,10 +45,8 @@
    
       <ul>
         <li><strong>Category</strong>:
-          @foreach ($portfolio->categories as $category)
-               {{ $category->name_by_lang }} 
-          @endforeach
-
+           {{ $portfolio->category->name_by_lang }} 
+ 
         </li>
         <li><strong>Project URL</strong>: <a href="{{$portfolio->url}}"><i class="fa fa-link btn btn-s btn-primary"> </i></a></li>
       </ul>

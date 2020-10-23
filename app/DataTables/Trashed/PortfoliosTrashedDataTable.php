@@ -15,8 +15,8 @@ class PortfoliosTrashedDataTable extends DataTable
     {
         return datatables($query)
             ->addColumn('checkbox', '<input type="checkbox" class="selected_data" name="selected_data[]" value="{{ $id }}">')
-            ->editColumn('en_name', function (Model $portfolio) { return $portfolio->en_name; })
-            ->editColumn('ar_name', function (Model $portfolio) { return $portfolio->ar_name; })
+            ->addColumn('client_name', function (Model $portfolio) { return $portfolio->client->en_name; })
+            ->addColumn('category', function (Model $portfolio) { return $portfolio->category->name_by_lang; })
             ->addColumn('restore', 'dashboard.portfolios.buttons.restore')
             ->addColumn('delete', 'dashboard.portfolios.buttons.force_delete')
             ->rawColumns(['checkbox', 'restore', 'delete', 'type']);
@@ -57,21 +57,23 @@ class PortfoliosTrashedDataTable extends DataTable
                 'class'             => ['no-export'],
             ],
             [
-                'name' => "en_name",
-                'data'    => 'en_name',
-                'title'   => trans('main.en_name'),
+                'name' => "client_name",
+                'data'    => 'client_name',
+                'title'   => trans('main.client'),
                 'searchable' => true,
                 'orderable'  => true,
                 'width'          => '200px',
             ],
+
             [
-                'name' => "ar_name",
-                'data'    => 'ar_name',
-                'title'   => trans('main.ar_name'),
+                'name' => "category",
+                'data'    => 'category',
+                'title'   => trans('main.category'),
                 'searchable' => true,
                 'orderable'  => true,
                 'width'          => '200px',
             ],
+        
             [
                 'name' => 'restore',
                 'data' => 'restore',
@@ -97,7 +99,14 @@ class PortfoliosTrashedDataTable extends DataTable
 
     protected function getButtons() : array
     {
-        return [];
+        return [
+        
+
+            [
+                'text' => '<i class="fas fa-trash"></i> ' . trans('main.delete'),
+                'className' => 'btn btn-danger deleteBtn',
+            ],
+        ];
     }
 
     /**

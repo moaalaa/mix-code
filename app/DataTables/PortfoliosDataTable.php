@@ -14,12 +14,13 @@ class PortfoliosDataTable extends DataTable
     {
         return datatables($query)
             ->addColumn('checkbox', '<input type="checkbox" class="selected_data" name="selected_data[]" value="{{ $id }}">')
-            ->editColumn('en_name', function (Model $portfolio) { return $portfolio->en_name; })
-            ->editColumn('ar_name', function (Model $portfolio) { return $portfolio->ar_name; })
-            ->addColumn('show', 'dashboard.portfolios.buttons.show')
-            ->addColumn('edit', 'dashboard.portfolios.buttons.edit')
-            ->addColumn('delete', 'dashboard.portfolios.buttons.delete')
-            ->rawColumns(['checkbox','show','edit', 'delete', 'type']);
+             ->addColumn('client_name', function (Model $portfolio) { return $portfolio->client->name_by_lang; })
+             ->addColumn('category', function (Model $portfolio) { return $portfolio->category->name_by_lang; })
+            ->addColumn('urls', "dashboard.portfolios.buttons.url")
+             ->addColumn('show', 'dashboard.portfolios.buttons.show')
+             ->addColumn('edit', 'dashboard.portfolios.buttons.edit')
+             ->addColumn('delete', 'dashboard.portfolios.buttons.delete')
+             ->rawColumns(['checkbox','show','edit','urls', 'delete', 'type']);
     }
 
     public function query(Portfolio $model)
@@ -29,6 +30,8 @@ class PortfoliosDataTable extends DataTable
 
     public function html()
     {
+
+        
         $html = $this->builder()
             ->columns($this->getColumns())
             ->minifiedAjax()
@@ -57,20 +60,31 @@ class PortfoliosDataTable extends DataTable
                 'class'             => ['no-export'],
             ],
             [
-                'name' => "en_name",
-                'data'    => 'en_name',
-                'title'   => trans('main.en_name'),
+                'name' => "client_name",
+                'data'    => 'client_name',
+                'title'   => trans('main.client'),
+                'searchable' => true,
+                'orderable'  => true,
+                'width'          => '200px',
+            ],
+
+            [
+                'name' => "category",
+                'data'    => 'category',
+                'title'   => trans('main.category'),
                 'searchable' => true,
                 'orderable'  => true,
                 'width'          => '200px',
             ],
             [
-                'name' => "ar_name",
-                'data'    => 'ar_name',
-                'title'   => trans('main.ar_name'),
-                'searchable' => true,
-                'orderable'  => true,
-                'width'          => '200px',
+                'name' => "urls",
+                'data'    => 'urls',
+                'title'   => trans('main.url'),
+                'class' => ['no-export'],
+                'exportable' => false,
+                'printable'  => false,
+                'searchable' => false,
+                'orderable'  => false,
             ],
             [
                 'name' => 'show',

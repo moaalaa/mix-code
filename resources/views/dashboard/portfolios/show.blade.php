@@ -48,7 +48,7 @@
 
         @component('dashboard.components.deleteModelForm')
             @slot('id', $portfolio->id )
-            @slot('deleteTitle', trans('main.portfolios') . ' ' . $portfolio->name_by_lang)
+            @slot('deleteTitle', trans('main.portfolios') . ' ' . $portfolio->url)
             @slot('url', route('dashboard.portfolios.destroy', $portfolio->id) )
         @endcomponent
 
@@ -94,6 +94,16 @@
     </div>
     <hr>
 </div>
+
+
+<div class="col-md-6 col-sm-12">
+    <div class="h6">
+        <span class="font-weight-bold">@lang('main.status'): </span>
+
+        <span class="text-muted">  @lang('main.'.$portfolio->status)</span>
+    </div>
+    <hr>
+</div>
                         
                     </div>
                 </div>
@@ -112,11 +122,11 @@
                 <div class="card-title font-weight-bold h5 text-center text-danger my-2">@lang('main.categories')</div>
                  
                 <ul class="list-group list-group-flush">
-                    @foreach ($portfolio->categories as $category)
+                  
                         
-                        <a href="{{ $category->path() }}" class="list-group-item list-group-item-action" target="_blank">{{ $category->name_by_lang }}</a>
+                        <a href="{{ $portfolio->category->path() }}" class="list-group-item list-group-item-action" target="_blank">{{ $portfolio->category->name_by_lang }}</a>
                         
-                    @endforeach
+                  
                 </ul>
                 
             </div>
@@ -124,21 +134,7 @@
        </div>
     </div>
     
-   
- 
-
-
-    {{-- status --}}
-    <div class="col-xl-12 col-md-12 col-sm-12 mb-3">
-<div class="card border-left-warning mb-3">
-    <div class="card-body">
-        <div class="card-title font-weight-bold h5 text-center text-warning">@lang('main.status')</div>
-        <div class="card-text">
-             @lang('main.'.$portfolio->status)
-         </div>
-    </div>
-</div>  
-</div>          
+         
      
 
 

@@ -4,6 +4,6 @@
 
 @component('dashboard.components.restoreModelForm') 
     @slot('id',  $id ) 
-    @slot('restoreTitle', trans('main.restore') . ' ' . $name_by_lang) 
+    @slot('restoreTitle', trans('main.restore') . ' ' . $url) 
     @slot('url', route('dashboard.portfolios.restore', $id) ) 
 @endcomponent

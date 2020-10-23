@@ -4,6 +4,6 @@
 
 @component('dashboard.components.deleteModelForm') 
     @slot('id',  $id ) 
-    @slot('deleteTitle', trans('main.portfolio') . ' ' . $name_by_lang) 
+    @slot('deleteTitle', trans('main.portfolio') . ' ' . $url) 
     @slot('url', route('dashboard.portfolios.destroy', $id) ) 
 @endcomponent

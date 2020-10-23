@@ -29,8 +29,8 @@ class PortfoliosRequest extends FormRequest
             // Basic Info
             'client_id'         => ['required', 'string', 'max:191'],
             'url'               => ['required', 'string' ],
-            'categories_id'     => ['required'],
-            'categories_id.*'   => ['required', new Uuid, Rule::exists('categories', 'id')],
+            'category_id'     => ['required'],
+            // 'categories_id.*'   => ['required', new Uuid, Rule::exists('categories', 'id')],
             // 'images'        => ['required', 'image', 'mimes:jpeg,jpg,png'],
                    
         ];

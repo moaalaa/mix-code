@@ -22,6 +22,14 @@ class CreatePortfoliosTable extends Migration
 
             $table->uuid('creator_id')->nullable();
             $table->uuid('client_id')->nullable();
+            $table->uuid('category_id')->nullable();
+
+ 
+            $table->foreign('category_id')
+            ->references('id')
+            ->on('categories')
+            ->onDelete('set null');
+            
 
             $table->foreign('creator_id')
                 ->references('id')
