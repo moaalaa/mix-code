@@ -6,11 +6,11 @@
         <h3 class="section-title">@lang('site.portfolio')</h3>
       </header>
   
-      <div class="row  " data-aos="fade-up" data-aos-delay="200">
+      <div class="row justify-content-center  " data-aos="fade-up" data-aos-delay="200">
 
         <!-- app section -->
  @foreach ($clients as $client)
- 
+ <div class="col-md-6 col-lg-5"  >
  <div class="card portfolio-card " >
   <img class="card-img-top  portfolio-img" src="{{  $client->mainMediaUrl() }} " alt="Card image" style="width:100%">
   <div class="card-body text-center">
@@ -20,9 +20,10 @@
     <a href="{{ route('client_details',$client->id)}}" class="btn btn-primary card-text-btn "><i class="ion ion-android-open"></i> Project Details</a>
   </div>
 </div>
+</div>
  @endforeach    
-     
-   
+ 
+ 
       </div>
 
     </div>

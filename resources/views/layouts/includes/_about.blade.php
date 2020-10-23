@@ -13,7 +13,7 @@
         <div class="col-lg-6 content order-lg-1 order-2">
        
           <h4> Look About <Strong>MixCode</Strong>  Education Routes</h4>
-          <h6> Tools Routes</h6>
+          <h6 class="about-description"> Tools Routes</h6>
         
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="fa fa-shopping-bag"></i></div>
@@ -64,7 +64,7 @@
         </div>
         <div class="col-lg-6 pt-5 pt-lg-0  " data-aos="fade-left">
           <h4>Science Routes</h4>
-          <h6>LEARN CONCEPTS OF PROGRAMMING SCIENCE AND PROGRAMMING SCIENCE IT SELF.</h6>
+          <h6 class="about-description" >LEARN CONCEPTS OF PROGRAMMING SCIENCE AND PROGRAMMING SCIENCE IT SELF.</h6>
           <p>
  
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -91,10 +91,15 @@
 
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
           <h4>Useless Routes</h4>
-          <h6> WIRED ROUTE NAME RIGHT ? USELESS ROUTE DISCUSS WHAT YOU CALLING BORED AND USELESS STAFF DURING YOU DEVELOPMENT.</h6>
+          <h6 class="about-description" > 
+            
+            WIRED ROUTE NAME RIGHT ?
+             USELESS ROUTE DISCUSS WHAT YOU CALLING BORED AND USELESS STAFF DURING YOU DEVELOPMENT.
+             LEARN TRADITIONAL TOOLS IN SOFTWARE ENGINEERING.
+
+            </h6>
           <p>
-LEARN TRADITIONAL TOOLS IN SOFTWARE ENGINEERING.
-<br>
+ 
 
 <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
   <div class="icon "><i class="fa fa-lightbulb-o"></i></div>

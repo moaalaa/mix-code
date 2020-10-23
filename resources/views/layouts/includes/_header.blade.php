@@ -4,7 +4,7 @@
 
       <div class="logo float-left">
 
-        <a href="index.html"><img src="{{ asset('/assets/img/logo/logo-1.png') }} " alt="" class="img-fluid"></a>
+        <a href="/"><img src="{{ asset('/assets/img/logo/logo-1.png') }} " alt="" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">

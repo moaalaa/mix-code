@@ -593,6 +593,14 @@ section {
   font-size: 32px;
 }
 
+
+h6.about-description {
+  margin-top: 17px;
+  margin-bottom: 28px;
+  font-size: revert;
+}
+
+
 #about .about-container p {
   line-height: 26px;
 }
