@@ -17,7 +17,7 @@ Route::get('/language/{lang}', 'LanguageController@changeLanguage')->name('chang
 
 Route::get('logout', 'ErrorsController@abort404')->name('errors.404');
 
-
+//Route::get('/home', 'HomeController@index')->name('home');
   
 // Social Auth Routes
 Route::get('auth/{provider}', 'Auth\\SocialAuthController@redirectToProvider')->name('social.auth');
@@ -25,7 +25,7 @@ Route::get('auth/{provider}/callback', 'Auth\\SocialAuthController@handleProvide
 
 // Home Routes
 
-Route::get('/', "HomeController@index")->name('get_all');
+Route::get('/', "HomeController@index")->name('home');
 Route::get('/clients/{client}', "ClientsController@show")->name('client_details');
 
 

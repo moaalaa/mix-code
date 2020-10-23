@@ -19,7 +19,7 @@
                 </span>
 
                 <div class="wrap-input100 validate-input m-b-16">
-                    <h4>@lang('main.login') </h4> 
+                    <h4 class="login-title">@lang('main.login') </h4> 
                </div>
 
 

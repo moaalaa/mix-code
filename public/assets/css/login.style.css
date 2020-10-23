@@ -74,7 +74,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #d33f8d;
+  color: #0067D5;
 }
 
 /*---------------------------------------------*/
@@ -161,7 +161,7 @@ iframe {
 }
 
 .hov1:hover {
-  border-color: #d33f8d;
+  border-color: #0067D5;
 }
 
 
@@ -185,11 +185,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #0250c5;
-  background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
-  background: -o-linear-gradient(bottom, #0250c5, #d43f8d);
-  background: -moz-linear-gradient(bottom, #0250c5, #d43f8d);
-  background: linear-gradient(bottom, #0250c5, #d43f8d);
+  background: #3B8FDE;
+  background: -webkit-linear-gradient(bottom, #3B8FDE, #3DACDE);
+  background: -o-linear-gradient(bottom, #3B8FDE, #3DACDE);
+  background: -moz-linear-gradient(bottom, #3B8FDE, #3DACDE);
+  background: linear-gradient(bottom, #3B8FDE, #3DACDE);
   position: relative;
   z-index: 1;
 }
@@ -259,7 +259,7 @@ iframe {
 
   display: block;
   width: 100%;
-  background: #e6e6e6;
+  background: rgba(240, 247, 255, 0.6);
   height: 62px;
   border-radius: 3px;
   padding: 0 30px 0 65px;
@@ -279,7 +279,7 @@ iframe {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 0px 0px;
-  color: rgba(211,63,141, 0.6);
+  color: rgba(172, 211, 255, 0.6);
 }
 
 .input100:focus + .focus-input100 {
@@ -328,7 +328,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-  color: #d33f8d;
+  color: #0067D5;
   padding-left: 18px;
 }
 
@@ -369,7 +369,7 @@ iframe {
   height: 18px;
   border-radius: 3px;
   background: #fff;
-  border: 2px solid #d33f8d;
+  border: 2px solid #0067D5;
   left: 0;
   top: 48%;
   -webkit-transform: translateY(-50%);
@@ -380,7 +380,7 @@ iframe {
 }
 
 .input-checkbox100:checked + .label-checkbox100::before {
-  color: #d33f8d;
+  color: #0067D5;
 }
 
 
@@ -407,7 +407,7 @@ iframe {
   width: 100%;
   height: 62px;
   border-radius: 3px;
-  background: #d33f8d;
+  background: #0067D5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -478,7 +478,7 @@ iframe {
 
 .btn-face:hover,
 .btn-google:hover {
-  border-color: #d33f8d;
+  border-color: #0067D5;
 }
 
 
@@ -545,6 +545,11 @@ iframe {
 
 img.login-logo {
   height: 100px;
+}
+
+h4.login-title {
+  font-weight: 700;
+  margin: 12px;
 }
 
 @media (max-width: 992px) {

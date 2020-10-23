@@ -78,7 +78,7 @@
             data-placeholder="@lang('main.clients')" required>
             @foreach ($clients as $client)
             <option value="{{ $client->id }}"
-                {{  $client->id == old('client_id') ? 'selected' : '' }}>
+                {{  $client->id ==  $portfolio->client->id ? 'selected' : '' }}>
                 {{ $client->name_by_lang }}
             </option>
             @endforeach
@@ -108,14 +108,13 @@
 
 
      <hr>
-
-                {{-- Categories --}}
+                 {{-- Categories --}}
 <div class="form-group mb-4 row">
     <label class="col-sm-2 col-form-label" for="category_id">@lang('main.categories')<span class="required"></span> </label>
     <div class="col-sm-10">
         <select name="category_id" id="category_id" class="form-control select2 @error('category_id') is-invalid @enderror" data-placeholder="@lang('main.categories')"   required>
             @foreach ($categories as $category)
-                <option value="{{ $category->id }}" {{ in_array($category->id, $portfolio->categories->pluck('id')->toArray()) ? 'selected' : '' }}>
+                <option value="{{ $category->id }}" {{  $category->id == $portfolio->category->id ? 'selected' : '' }}>
                     {{ $category->name_by_lang }} 
                 </option>
             @endforeach

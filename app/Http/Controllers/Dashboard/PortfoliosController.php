@@ -125,9 +125,8 @@ class PortfoliosController extends Controller
      */
     public function update(PortfoliosRequest $request, Portfolio $portfolio)
     {
-    
-
-        $portfolio = $portfolio->update($request->all());
+     
+          $portfolio->update($request->all());
 
         
         if ($request->has('images')) {

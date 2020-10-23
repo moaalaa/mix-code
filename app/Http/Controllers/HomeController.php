@@ -18,8 +18,7 @@ class HomeController extends Controller
          
         return view('index', compact([ 'services' , 'clients' ]));
     }
-    
-    
+   
    
 
 
