@@ -1,0 +1,93 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    # Get Match After www. and access it by %1
+    # EX: (www.domain.com) will match (domain.com) without www.
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    
+    # Redirect our match %1 (domain.com) with 301 and to HTTPS to not run next HTTPS rule
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+    RewriteCond %{HTTPS}  !=on
+    RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+    
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+</IfModule>
+
+# max-age=25920000 => we till browser to remember to communicate via HTTPS every "300 Day"
+Header add Strict-Transport-Security "max-age=25920000"
+
+# Expiration
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    
+    ExpiresDefault                                      "access plus 1 week"
+
+  # CSS
+    ExpiresByType text/css                              "access plus 1 week"
+
+  # Data interchange
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+  # Favicon (cannot be renamed!)
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # HTML components (HTCs)
+    ExpiresByType text/x-component                      "access plus 1 week"
+
+  # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+  # JavaScript
+    ExpiresByType application/javascript                "access plus 1 week"
+
+  # Manifest files
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+  # Media
+    ExpiresByType audio/ogg                             "access plus 1 week"
+    ExpiresByType image/gif                             "access plus 1 week"
+    ExpiresByType image/jpeg                            "access plus 1 week"
+    ExpiresByType image/png                             "access plus 1 week"
+    ExpiresByType video/mp4                             "access plus 1 week"
+    ExpiresByType video/ogg                             "access plus 1 week"
+    ExpiresByType video/webm                            "access plus 1 week"
+
+  # Web feeds
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+  # Web fonts
+    ExpiresByType application/font-woff                 "access plus 1 week"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 week"
+    ExpiresByType application/x-font-ttf                "access plus 1 week"
+    ExpiresByType font/opentype                         "access plus 1 week"
+    ExpiresByType image/svg+xml                         "access plus 1 week"
+
+    Header set Cache-Control "public"
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_value serialize_precision -1
+</IfModule>
+<IfModule lsapi_module>
+   php_value serialize_precision -1
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
