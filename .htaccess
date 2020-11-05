@@ -2,6 +2,12 @@
 
     RewriteEngine On
 
+    RewriteCond %{HTTPS}  !=on
+    RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+
     RewriteRule ^(.*)$ public/$1 [L]
+    # Header add Strict-Transport-Security "max-age=300"
 
 </IfModule>
+
+
