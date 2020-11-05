@@ -12,3 +12,4 @@ npm-debug.log
 yarn-error.log
 /site-template
 _ide_helper.php
+.htaccess
