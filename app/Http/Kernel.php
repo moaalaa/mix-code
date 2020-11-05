@@ -23,7 +23,7 @@ class Kernel extends HttpKernel
         \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments::class,
         \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
         \Spatie\Cors\Cors::class,
-        // \MixCode\Http\Middleware\ForceHttps::class,
+        \MixCode\Http\Middleware\ForceHttps::class,
     ];
 
     /**
