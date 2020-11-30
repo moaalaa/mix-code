@@ -19,10 +19,11 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \MixCode\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        // \RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes::class,
-        // \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments::class,
-        // \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
+        \RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes::class,
+        \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments::class,
+        \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
         \Spatie\Cors\Cors::class,
+        \MixCode\Http\Middleware\ForceHttps::class,
     ];
 
     /**
