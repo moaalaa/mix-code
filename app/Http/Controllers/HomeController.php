@@ -14,7 +14,7 @@ class HomeController extends Controller
     {
      
         $services = Service::all();
-        $clients = Client::all();
+        $clients = Client::orderBy('order','asc')->get();
          
         return view('index', compact([ 'services' , 'clients' ]));
     }
