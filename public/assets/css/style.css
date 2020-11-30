@@ -1337,11 +1337,11 @@ img.img-fluid.team-image {
 }
 
 #contact .info i {
-  font-size: 32px;
-  color: #007bff;
-  float: left;
+  font-size: 20px;
+   float: left;
   line-height: 1;
 }
+ 
 
 #contact .info p {
   padding: 0 0 10px 36px;

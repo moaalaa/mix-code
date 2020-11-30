@@ -156,7 +156,7 @@
   </section><!-- End Team Section -->
 
   <!-- ======= Clients Section ======= -->
-  @include('layouts.includes._clients')
+  {{-- @include('layouts.includes._clients') --}}
   <!-- End Clients Section -->
 
   <!-- ======= Contact Section ======= -->
@@ -172,19 +172,31 @@
         @php
         $settings = getSettings();
         @endphp
+<div class="col-lg-2 col-md-2">
+</div>
 
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="row text-center mb-4">
 
-        <div class="col-lg-12">
-          <div class="row">
+            <div class="col-md-4 info mb-2">
+  <a href="mailto:{{$settings->email}} " class="btn btn-outline-primary "> <i class="fa fa-envelope"> @lang('site.email')</i> </a>
 
-            <div class="col-md-6 info">
-              <i class="ion-ios-email-outline"></i>
-              <p>{{  $settings->email}}</p>
             </div>
-            <div class="col-md-6 info">
-              <i class="ion-ios-telephone-outline"></i>
-              <p>{{  $settings->phone}}</p>
+            <div class="col-md-4 info mb-2">
+          
+<a href="tel:{{$settings->phone}}" class="btn btn-outline-info ">
+ <i class="fa fa-phone " aria-hidden="true"> @lang('site.phone')</i> 
+</a> 
+ 
             </div>
+
+            <div class="col-md-4 info mb-2">
+          
+              <a href="https://api.whatsapp.com/send?phone={{$settings->phone}}&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="btn btn-outline-success  contact-btns"  target="_blank">
+               <i class="fa fa-whatsapp " aria-hidden="true"> @lang('site.whatsapp')</i> 
+              </a> 
+               
+                          </div>
           </div>
 
           <div class="form">
@@ -238,6 +250,7 @@
 
     </div>
   </section><!-- End Contact Section -->
+ 
 
 </main><!-- End #main -->
 

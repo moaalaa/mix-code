@@ -160,4 +160,7 @@ return [
     "team_leaders"              =>"قادة الفريق",
     "portfolio"                 => "سابقة الاعمال",
     "our_clients"               =>"عملائنا",
+    "whatsapp"                  =>"الواتس اب",
+    "phone"                      => "الهاتف",
+    "email"                      => "البريد الاكترونى",
 ];

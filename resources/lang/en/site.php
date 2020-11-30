@@ -159,5 +159,8 @@ return [
     'all'                       => 'All',
     "team_leaders"              => "Team leaders",
     "portfolio"                 =>"Portfolio",
-    "our_clients"               => "Our Clients"
+    "our_clients"               => "Our Clients",
+    "whatsapp"                  => "Whatsapp",
+    "phone"                      => "Phone",
+    "email"                      => "Email",
  ];
